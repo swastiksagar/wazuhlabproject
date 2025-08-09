@@ -35,7 +35,7 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 +--------------------+        +-------------------+         +----------------------+
 ```
 ##  Deployment Steps of Wazuh OVA
-1. Downloaded it from official OVA from Wazuh downloads section.
+1. Downloaded the .ova from official Wazuh downloads section.
 2. Imported the .ova into **VMware**.
 3. Allocated at least **4GB RAM**, **2 CPU cores**, and **50GB storage**.
 4. Configured **Bridged Networking** or **NAT with Port Forwarding**.
@@ -49,13 +49,13 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
    ```
 
 ###  Access of Wazuh Dashboard
-- Open a browser and navigate to:
+- Opened a browser and navigated to:
  ```
   https://<WAZUH_VM_IP>
   ```
-- Login with default credentials and change the password.
+- Login's with default credentials and change the password.
 ###  Installation of Wazuh Agents
-- From the dashboard: **Agents Deploy new agent**.
+- From the dashboard: **Agents Deployed new agent**.
 - Followed the installer instructions for **Windows**
 - Example (Powershell):
 
@@ -63,13 +63,13 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
  .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.0.0.2"
   ```
 
-###  Test Detection
-- Run a port scan:
+###  Testing Detection
+- Running a port scan:
 
    ```bash
   nmap -A <agent-ip>
   ```
-- Try failed login attempts.
+- Trying failed login attempts.
 - Uploaded test malware samples.
 
 ##  Results
