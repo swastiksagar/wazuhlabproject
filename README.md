@@ -2,19 +2,21 @@
 <img height="200" src="https://i.postimg.cc/TPt92ZmJ/Copy-of-s-Block.png" />
 </div>
 
-##  Description
+<div align="left"> <h3>Description</h3></div>
+
 This project demonstrates the deployment and testing of a **Security Information and Event Management (SIEM)** system using *Wazuh*.  
-The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.
+The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
 
 
-##  Objectives
-- Deployed Wazuh SIEM using an OVA file in a virtual environment.
-- Configured network settings for agent–manager communication.
-- Installed Wazuh agents on monitored endpoints (Windows).
-- Generated and detected simulated security events.
-- Analyzed and visualized security logs in the Wazuh Dashboard.
+<div align="left"> <h3>Objectives</h3></div>
+⦁ Deployed Wazuh SIEM using an OVA file in a virtual environment.<br>
+⦁ Configured network settings for agent–manager communication.<br>
+⦁ Installed Wazuh agents on monitored endpoints (Windows).<br>
+⦁ Generated and detected simulated security events.<br>
+⦁ Analyzed and visualized security logs in the Wazuh Dashboard.<br>
 
-##  Tools & Technologies
+<div align="left"> <h3>Tools & Technologies</h3></div>
+
 | Tool / Technology        | Purpose |
 |--------------------------|---------|
 | **Wazuh OVA**            | Pre-configured SIEM with Wazuh Manager, OpenSearch, and Dashboard |
@@ -23,7 +25,8 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 | **Wazuh Agent**          | Installed on endpoints to send logs/events |
 | **Web Browser**          | For accessing the Wazuh Dashboard |
 
-##  Lab Architecture
+<div align="left"> <h3>Lab Archietecture</h3></div>
+
 ```
 +--------------------+        +-------------------+         +----------------------+
 |  Endpoint (Agent)  |  --->  |                   |         |                      |
@@ -34,47 +37,52 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 |  Endpoint (Agent)  |  --->  |                   |         |                      |
 +--------------------+        +-------------------+         +----------------------+
 ```
-##  Deployment Steps of Wazuh OVA
+<div align="left"> <h3>Deployment Steps of Wazuh OVA</h3></div>
+
 1. Downloaded the .ova from official Wazuh downloads section.
 2. Imported the .ova into **VMware**.
 3. Allocated at least **4GB RAM**, **2 CPU cores**, and **50GB storage**.
 4. Configured **Bridged Networking** or **NAT with Port Forwarding**.
 
-###  Starting Wazuh VM
-1. Booted up the VM and log in with default credentials.
-2. Found the VM IP using:
-
-   ```bash
+<div align="left"> <h3>Starting Wazuh in VM</h3></div>
+1. Booted up the VM and log in with default credentials.<br>
+2. Found the VM IP using:<br></br>
+ 
+ ```bash
    ip addr
-   ```
+ ```
 
-###  Access of Wazuh Dashboard
-- Opened a browser and navigated to:
+<div align="left"> <h3>Accessing of Wazuh Dashboard</h3></div>
+⦁ Opened a browser and navigated to:<br></br>
+
  ```
   https://<WAZUH_VM_IP>
   ```
-- Login's with default credentials and change the password.
-###  Installation of Wazuh Agents
-- From the dashboard: **Agents Deployed new agent**.
-- Followed the installer instructions for **Windows**
-- Example (Powershell):
+⦁ Login's with default credentials and change the password.
+
+<div align="left"> <h3>Installation of Wazuh Agents</h3></div>
+
+⦁ From the dashboard: **Agents Deployed new agent**.<br>
+⦁ Followed the installer instructions for **Windows**<br>
+⦁ Example (Powershell):<br>
 
  ```bash
  .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.0.0.2"
   ```
 
-###  Testing Detection
-- Running a port scan:
+<div align="left"> <h3>Testing Detection</h3></div>
+⦁ Running a port scan:<br></br>
 
    ```bash
   nmap -A <agent-ip>
   ```
-- Trying failed login attempts.
-- Uploaded test malware samples.
+⦁ Trying failed login attempts.<br>
+⦁ Uploaded test malware samples.<br>
 
-##  Results
-- Wazuh successfully collected logs from endpoints.
-- Detected simulated attacks like **port scanning** and **brute-force attempts**.
-- Real-time alerts and dashboards displayed in the Wazuh interface.
+<div align="left"> <h3>Results</h3></div>
+
+⦁ Wazuh successfully collected logs from endpoints.<br>
+⦁ Detected simulated attacks like **port scanning** and **brute-force attempts**.<br>
+⦁ Real-time alerts and dashboards displayed in the Wazuh interface.<br>
 
 *Disclaimer: Only use this in closed environment.* 
