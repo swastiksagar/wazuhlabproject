@@ -28,14 +28,14 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 <div align="left"> <h3>Lab Archietecture</h3></div>
 
 ```
-+--------------------+        +-------------------+         +----------------------+
-|  Endpoint (Agent)  |  --->  |                   |         |                      |
-|  Windows / Linux   |        |                   |         |                      |
-+--------------------+        |                   |         |                      |
-|   Wazuh Manager    |  <-->  |    OpenSearch /   |         |      Dashboard       |
-+--------------------+        |     (OVA VM)      |         |                      |
-|  Endpoint (Agent)  |  --->  |                   |         |                      |
-+--------------------+        +-------------------+         +----------------------+
++--------------------+        +-------------------+         +-------------------+
+|  Endpoint (Agent)  |  --->  |                   |         |                   |
+|  Windows / Linux   |        |                   |         |                   |
++--------------------+        |                   |         |                   |
+|   Wazuh Manager    |  <-->  |    OpenSearch /   |         |     Dashboard     |
++--------------------+        |     (OVA VM)      |         |                   |
+|  Endpoint (Agent)  |  --->  |                   |         |                   |
++--------------------+        +-------------------+         +-------------------+
 ```
 <div align="left"> <h3>Deployment Steps of Wazuh OVA</h3></div>
 
