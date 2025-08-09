@@ -55,7 +55,7 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
   ```
 - Login with default credentials and change the password.
 ###  Installation of Wazuh Agents
-- From the dashboard: **Agents → Deploy new agent**.
+- From the dashboard: **Agents Deploy new agent**.
 - Followed the installer instructions for **Windows**
 - Example (Powershell):
 
