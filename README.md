@@ -59,9 +59,9 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 </integration>
 ```
 Using this command line in *.ossec.conf* file.
-<div align="left"> <h3>Starting Wazuh in VM</h3></div>
-1. Booted up the VM and log in with default credentials.<br>
-2. Found the VM IP using:<br></br>
+<div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
+1. Booted up the Virtual Machine and log in with default credentials.<br>
+2. Found the Virtual Machine IP using:<br></br>
  
  ```bash
    ip addr
