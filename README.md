@@ -27,7 +27,7 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 
 <div align="left"> <h3>Lab Archietecture</h3></div>
 
-```
+```bash
 +--------------------+        +-------------------+       +-------------------+
 |  Endpoint (Agent)  |  --->  |                   |       |                   |
 |  Windows / Linux   |        |                   |       |                   |
@@ -44,6 +44,20 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 3. Allocated at least **4GB RAM**, **2 CPU cores**, and **50GB storage**.
 4. Configured **Bridged Networking** or **NAT with Port Forwarding**.
 
+<div align="left"><h3> Integration</h3></div>
+<h4>Virustotal</h4>
+
+⦁ Integrated the Virustotal API for Malware Scanning.</br>
+
+```bash
+<integration>
+  <name>virustotal</name>
+  <api_key>API_KEY</api_key>
+  <group>syscheck</group>
+  <alert_format>json</alert_format>
+</integration>
+```
+Using this command line in *.ossec.conf* file.
 <div align="left"> <h3>Starting Wazuh in VM</h3></div>
 1. Booted up the VM and log in with default credentials.<br>
 2. Found the VM IP using:<br></br>
@@ -55,10 +69,12 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 <div align="left"> <h3>Accessing of Wazuh Dashboard</h3></div>
 ⦁ Opened a browser and navigated to:<br></br>
 
- ```
+ ```bash
   https://<WAZUH_VM_IP>
   ```
 ⦁ Login's with default credentials and change the password.
+
+<img width="" height="300" alt="Screenshot 2025-08-17 191051" src="https://github.com/user-attachments/assets/0d515e2f-abc4-448b-bef9-0565340406d0" />
 
 <div align="left"> <h3>Installation of Wazuh Agents</h3></div>
 
@@ -78,8 +94,7 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
   ```
 ⦁ Trying failed login attempts.<br>
 ⦁ Uploaded test malware samples.<br>
-<div align="left"><h3>Preview</h3></div>
-<img width="" height="300" alt="Screenshot 2025-08-17 191051" src="https://github.com/user-attachments/assets/0d515e2f-abc4-448b-bef9-0565340406d0" />
+<div align="left"><h3>Overview</h3></div>
 <img width="" height="300" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" />
 
 <div align="left"> <h3>Results</h3></div>
