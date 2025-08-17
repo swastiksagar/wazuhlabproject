@@ -81,12 +81,11 @@ Using this command line in *.ossec.conf* file.
 
 ⦁ From the dashboard: **Agents Deployed new agent**.<br>
 ⦁ Followed the installer instructions for **Windows**<br>
-⦁ Example (Powershell):<br>
 
  ```bash
  .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.0.0.2"
   ```
-
+*Paste this in Windows Powershell.*
 <div align="left"> <h3>Testing Detection</h3></div>
 ⦁ Running a port scan:<br></br>
 
