@@ -27,7 +27,7 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 
 <div align="left"> <h3>Lab Archietecture</h3></div>
 
-```bash
+```console
 +--------------------+        +-------------------+       +-------------------+
 |  Endpoint (Agent)  |  --->  |                   |       |                   |
 |  Windows / Linux   |        |                   |       |                   |
