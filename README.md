@@ -45,14 +45,15 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 4. Configured **Bridged Networking** or **NAT with Port Forwarding**.
 
 <div align="left"><h3> Integration</h3></div>
-<h4>Virustotal</h4>
+
+**Virustotal**
 
 ⦁ Integrated the Virustotal API for Malware Scanning.</br>
 
 ```bash
 <integration>
   <name>virustotal</name>
-  <api_key>API_KEY</api_key>
+  <api_key>API_KEY</api_key> <!-- Your Virustotal API Key -->
   <group>syscheck</group>
   <alert_format>json</alert_format>
 </integration>
