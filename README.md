@@ -78,7 +78,8 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
   ```
 ⦁ Trying failed login attempts.<br>
 ⦁ Uploaded test malware samples.<br>
-
+<div align="left"><h3>Preview</h3></div>
+<img width="" height="300" alt="Screenshot 2025-08-17 191051" src="https://github.com/user-attachments/assets/0d515e2f-abc4-448b-bef9-0565340406d0" />
 <div align="left"> <h3>Results</h3></div>
 
 ⦁ Wazuh successfully collected logs from endpoints.<br>
