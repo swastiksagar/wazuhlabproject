@@ -67,6 +67,8 @@ Using this command line in *.ossec.conf* file.
    ip addr
  ```
 
+<img width="" height="300" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/0a465c63-b572-4da0-8da7-70a986fb6d7e" /><br>
+*Preview of Virtual Machine ip addr command.* 
 <div align="left"> <h3>Accessing of Wazuh Dashboard</h3></div>
 ⦁ Opened a browser and navigated to:<br></br>
 
