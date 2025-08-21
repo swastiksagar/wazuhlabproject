@@ -106,4 +106,26 @@ Using this command line in *.ossec.conf* file.
 ⦁ Detected simulated attacks like **port scanning** and **brute-force attempts**.<br>
 ⦁ Real-time alerts and dashboards displayed in the Wazuh interface.<br>
 
+<div align="left"> <h3>File Integrity Monitoring</h3></div>
+<img width="" height="300" alt="image" src="https://github.com/user-attachments/assets/ab31a78d-b5a3-4be7-beb4-76cf21e0d57b" /><br>
+
+*Added this lines in ossec.conf to monitor the desired directories*<br>
+
+<img width="" height="300" alt="Screenshot 2025-08-21 203532" src="https://github.com/user-attachments/assets/a1bae4ca-e9d2-48ab-872b-3b31525e722f" /><br>
+
+*Created a Notepad File for realtime monitoring*<br>
+
+<img width="" height="300" alt="Screenshot 2025-08-21 203551" src="https://github.com/user-attachments/assets/45044c8a-a35d-406e-9c37-9a9ffe2df23b" /><br>
+
+*The **.txt** is visible in wazuh alert*<br>
+
+<img width="" height="300" alt="Screenshot 2025-08-21 203620" src="https://github.com/user-attachments/assets/d8ab00b3-894d-450e-bbed-bd55574390c4" /><br>
+
+*Made changes in **.txt** file*<br>
+
+<img width="" height="300" alt="Screenshot 2025-08-21 203652" src="https://github.com/user-attachments/assets/91189be4-e00f-43ba-bb29-84640babac81" /><br>
+
+*Wazuh showing the file has been modified and it's content under **syscheck.diff***<br>
+
+
 *Disclaimer: Only use this in closed environment.* 
