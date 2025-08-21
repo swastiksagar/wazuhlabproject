@@ -125,7 +125,12 @@ Using this command line in *.ossec.conf* file.
 
 <img width="" height="300" alt="Screenshot 2025-08-21 203652" src="https://github.com/user-attachments/assets/91189be4-e00f-43ba-bb29-84640babac81" /><br>
 
-*Wazuh showing the file has been modified and it's content under **syscheck.diff***<br>
+*Wazuh showed the file has been modified and it's content under **syscheck.diff** in event section*<br>
+
+<img width="" height="300" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
+<img width="" height="300" alt="Screenshot 2025-08-21 203845" src="https://github.com/user-attachments/assets/270ccfe8-059a-4a6a-9a4e-061c56ff00d6" /><br>
+
+*Generated report of File Integrity the report can be seen on reporting section and can be downloaded in **PDF** format. The sample report has been uploaded under the file section of the wazuhlabproject repositories*<br>
 
 
 *Disclaimer: Only use this in closed environment.* 
