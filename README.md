@@ -107,28 +107,29 @@ Using this command line in *.ossec.conf* file.
 ⦁ Real-time alerts and dashboards displayed in the Wazuh interface.<br>
 
 <div align="left"> <h3>File Integrity Monitoring</h3></div>
-<img width="" height="300" alt="image" src="https://github.com/user-attachments/assets/ab31a78d-b5a3-4be7-beb4-76cf21e0d57b" /><br>
+
+<img width="" height="310" alt="image" src="https://github.com/user-attachments/assets/ab31a78d-b5a3-4be7-beb4-76cf21e0d57b" /><br>
 
 *Added this lines in ossec.conf to monitor the desired directories*<br>
 
-<img width="" height="300" alt="Screenshot 2025-08-21 203532" src="https://github.com/user-attachments/assets/a1bae4ca-e9d2-48ab-872b-3b31525e722f" /><br>
+<img width="" height="323" alt="Screenshot 2025-08-21 203532" src="https://github.com/user-attachments/assets/a1bae4ca-e9d2-48ab-872b-3b31525e722f" /><br>
 
 *Created a Notepad File for realtime monitoring*<br>
 
-<img width="" height="300" alt="Screenshot 2025-08-21 203551" src="https://github.com/user-attachments/assets/45044c8a-a35d-406e-9c37-9a9ffe2df23b" /><br>
+<img width="" height="323" alt="Screenshot 2025-08-21 203551" src="https://github.com/user-attachments/assets/45044c8a-a35d-406e-9c37-9a9ffe2df23b" /><br>
 
 *The **.txt** is visible in wazuh alert*<br>
 
-<img width="" height="300" alt="Screenshot 2025-08-21 203620" src="https://github.com/user-attachments/assets/d8ab00b3-894d-450e-bbed-bd55574390c4" /><br>
+<img width="" height="311" alt="Screenshot 2025-08-21 203620" src="https://github.com/user-attachments/assets/d8ab00b3-894d-450e-bbed-bd55574390c4" /><br>
 
 *Made changes in **.txt** file*<br>
 
-<img width="" height="300" alt="Screenshot 2025-08-21 203652" src="https://github.com/user-attachments/assets/91189be4-e00f-43ba-bb29-84640babac81" /><br>
+<img width="" height="323" alt="Screenshot 2025-08-21 203652" src="https://github.com/user-attachments/assets/91189be4-e00f-43ba-bb29-84640babac81" /><br>
 
 *Wazuh showed the file has been modified and it's content under **syscheck.diff** in event section*<br>
 
-<img width="" height="300" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
-<img width="" height="300" alt="Screenshot 2025-08-21 203845" src="https://github.com/user-attachments/assets/270ccfe8-059a-4a6a-9a4e-061c56ff00d6" /><br>
+<img width="" height="323" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
+<img width="" height="323" alt="Screenshot 2025-08-21 203845" src="https://github.com/user-attachments/assets/270ccfe8-059a-4a6a-9a4e-061c56ff00d6" /><br>
 
 *Generated report of File Integrity the report can be seen on reporting section and can be downloaded in **PDF** format. The sample report has been uploaded under the file section of the wazuhlabproject repositories*<br>
 
