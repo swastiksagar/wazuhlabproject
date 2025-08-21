@@ -103,7 +103,6 @@ Using this command line in *.ossec.conf* file.
 <img width="" height="300" alt="Screenshot 2025-08-17 221458" src="https://github.com/user-attachments/assets/06eaffac-69fe-4af8-ad6c-c90e556e6cb3" />
 
 ⦁ Wazuh successfully collected logs from endpoints.<br>
-⦁ Detected simulated attacks like **port scanning** and **brute-force attempts**.<br>
 ⦁ Real-time alerts and dashboards displayed in the Wazuh interface.<br>
 
 <div align="left"> <h3>File Integrity Monitoring</h3></div>
