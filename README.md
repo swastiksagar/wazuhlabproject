@@ -113,7 +113,6 @@ Using this command line in *.ossec.conf* file.
 <img width="" height="323" alt="Screenshot 2025-08-22 021704" src="https://github.com/user-attachments/assets/f1712bb3-d177-4e6f-b860-3a95eadb4d0d" /><br>
 
 *Dashboard of File Integrity Monitoring*<br>
-
 <img width="" height="310" alt="image" src="https://github.com/user-attachments/assets/ab31a78d-b5a3-4be7-beb4-76cf21e0d57b" /><br>
 
 *Added this lines in ossec.conf to monitor the desired directories*<br>
