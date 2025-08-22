@@ -67,17 +67,19 @@ Using this command line in *.ossec.conf* file.
    ip addr
  ```
 
-<img width="" height="300" alt="Screenshot (1)" src="https://github.com/user-attachments/assets/0a465c63-b572-4da0-8da7-70a986fb6d7e" /><br>
+<img width="" height="348" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/19cbca14-78a9-45eb-aafd-db46f5b49d12" /><br>
+
 *Preview of Virtual Machine ip addr command.* 
 <div align="left"> <h3>Accessing of Wazuh Dashboard</h3></div>
 ⦁ Opened a browser and navigated to:<br></br>
 
  ```bash
-  https://<WAZUH_VM_IP>
+  https://<WAZUH_VM_IP> #MY IP WAS 10.233.187.64
   ```
 ⦁ Login's with default credentials and change the password.
 
-<img width="" height="300" alt="Screenshot 2025-08-17 191051" src="https://github.com/user-attachments/assets/0d515e2f-abc4-448b-bef9-0565340406d0" />
+<img width="" height="327" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" />
+
 
 <div align="left"> <h3>Installation of Wazuh Agents</h3></div>
 
@@ -87,7 +89,9 @@ Using this command line in *.ossec.conf* file.
  ```bash
  .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.0.0.2"
   ```
-*Paste this in Windows Powershell.*
+<img width="" height="350" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
+
+*Paste this in Windows Powershell.*<br>
 <div align="left"> <h3>Testing Detection</h3></div>
 ⦁ Running a port scan:<br></br>
 
@@ -97,15 +101,18 @@ Using this command line in *.ossec.conf* file.
 ⦁ Trying failed login attempts.<br>
 ⦁ Uploaded test malware samples.<br>
 <div align="left"><h3>Overview</h3></div>
-<img width="" height="300" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" />
+<img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" />
 
 <div align="left"> <h3>Results</h3></div>
-<img width="" height="300" alt="Screenshot 2025-08-17 221458" src="https://github.com/user-attachments/assets/06eaffac-69fe-4af8-ad6c-c90e556e6cb3" />
+<img width="" height="287" alt="Screenshot 2025-08-17 221458" src="https://github.com/user-attachments/assets/06eaffac-69fe-4af8-ad6c-c90e556e6cb3" />
 
 ⦁ Wazuh successfully collected logs from endpoints.<br>
 ⦁ Real-time alerts and dashboards displayed in the Wazuh interface.<br>
 
 <div align="left"> <h3>File Integrity Monitoring</h3></div>
+<img width="" height="323" alt="Screenshot 2025-08-22 021704" src="https://github.com/user-attachments/assets/f1712bb3-d177-4e6f-b860-3a95eadb4d0d" /><br>
+
+*Dashboard of File Integrity Monitoring*<br>
 
 <img width="" height="310" alt="image" src="https://github.com/user-attachments/assets/ab31a78d-b5a3-4be7-beb4-76cf21e0d57b" /><br>
 
@@ -117,7 +124,7 @@ Using this command line in *.ossec.conf* file.
 
 <img width="" height="323" alt="Screenshot 2025-08-21 203551" src="https://github.com/user-attachments/assets/45044c8a-a35d-406e-9c37-9a9ffe2df23b" /><br>
 
-*The **.txt** is visible in wazuh alert*<br>
+*The entry of **.txt** is visible in wazuh alert*<br>
 
 <img width="" height="311" alt="Screenshot 2025-08-21 203620" src="https://github.com/user-attachments/assets/d8ab00b3-894d-450e-bbed-bd55574390c4" /><br>
 
@@ -127,6 +134,10 @@ Using this command line in *.ossec.conf* file.
 
 *Wazuh showed the file has been modified and it's content under **syscheck.diff** in event section*<br>
 
+<img width="" height="323" alt="Screenshot 2025-08-22 021639" src="https://github.com/user-attachments/assets/36bb743b-f8ee-480e-ada8-7b02d39f775e" /><br>
+
+*The file changes are visible in Event section*<br>
+<h4>Report</h4>
 <img width="" height="323" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
 <img width="" height="323" alt="Screenshot 2025-08-21 203845" src="https://github.com/user-attachments/assets/270ccfe8-059a-4a6a-9a4e-061c56ff00d6" /><br>
 
