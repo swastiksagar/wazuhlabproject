@@ -74,7 +74,7 @@ Using this command line in *.ossec.conf* file.
 ⦁ Opened a browser and navigated to:<br></br>
 
  ```bash
-  https://<WAZUH_VM_IP> #MY IP WAS 10.233.187.64
+  https://<WAZUH_VM_IP> #IN MY CASE 10.233.187.64
   ```
 ⦁ Login's with default credentials and change the password.
 
@@ -98,13 +98,14 @@ Using this command line in *.ossec.conf* file.
    ```bash
   nmap -A <agent-ip>
   ```
+
 ⦁ Trying failed login attempts.<br>
 ⦁ Uploaded test malware samples.<br>
 <div align="left"><h3>Overview</h3></div>
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" />
 
 <div align="left"> <h3>Results</h3></div>
-<img width="" height="287" alt="Screenshot 2025-08-17 221458" src="https://github.com/user-attachments/assets/06eaffac-69fe-4af8-ad6c-c90e556e6cb3" />
+<img width="" height="287" alt="Screenshot 2025-08-17 221458" src="https://github.com/user-attachments/assets/06eaffac-69fe-4af8-ad6c-c90e556e6cb3" /><br>
 
 ⦁ Wazuh successfully collected logs from endpoints.<br>
 ⦁ Real-time alerts and dashboards displayed in the Wazuh interface.<br>
@@ -112,32 +113,34 @@ Using this command line in *.ossec.conf* file.
 <div align="left"> <h3>File Integrity Monitoring</h3></div>
 <img width="" height="323" alt="Screenshot 2025-08-22 021704" src="https://github.com/user-attachments/assets/f1712bb3-d177-4e6f-b860-3a95eadb4d0d" /><br>
 
-*Dashboard of File Integrity Monitoring*<br>
+*Dashboard of File Integrity Monitoring.*<br>
 
 <img width="" height="310" alt="image" src="https://github.com/user-attachments/assets/ab31a78d-b5a3-4be7-beb4-76cf21e0d57b" /><br>
 
-*Added this lines in ossec.conf to monitor the desired directories*<br>
+*Added this lines in ossec.conf to monitor the desired directories.*<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-21 203532" src="https://github.com/user-attachments/assets/a1bae4ca-e9d2-48ab-872b-3b31525e722f" /><br>
 
-*Created a Notepad File for realtime monitoring*<br>
+*Created a Notepad File for realtime monitoring.*<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-21 203551" src="https://github.com/user-attachments/assets/45044c8a-a35d-406e-9c37-9a9ffe2df23b" /><br>
 
-*The entry of **.txt** is visible in wazuh alert*<br>
+*The entry of **.txt** is visible in wazuh alert.*<br>
 
 <img width="" height="311" alt="Screenshot 2025-08-21 203620" src="https://github.com/user-attachments/assets/d8ab00b3-894d-450e-bbed-bd55574390c4" /><br>
 
-*Made changes in **.txt** file*<br>
+*Made changes in **.txt** file.*<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-21 203652" src="https://github.com/user-attachments/assets/91189be4-e00f-43ba-bb29-84640babac81" /><br>
 
-*Wazuh showed the file has been modified and it's content under **syscheck.diff** in event section*<br>
+*Wazuh showed the file has been modified and it's content under **syscheck.diff** in event section.*<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-22 021639" src="https://github.com/user-attachments/assets/36bb743b-f8ee-480e-ada8-7b02d39f775e" /><br>
 
-*The file changes are visible in Event section*<br>
-<h4>Report</h4>
+*The file changes are visible in Event section.*<br>
+
+**Report**<br>
+
 <img width="" height="323" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
 <img width="" height="323" alt="Screenshot 2025-08-21 203845" src="https://github.com/user-attachments/assets/270ccfe8-059a-4a6a-9a4e-061c56ff00d6" /><br>
 
