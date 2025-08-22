@@ -146,7 +146,7 @@ Using this command line in *.ossec.conf* file.
 <img width="" height="323" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
 <img width="" height="323" alt="Screenshot 2025-08-21 203845" src="https://github.com/user-attachments/assets/270ccfe8-059a-4a6a-9a4e-061c56ff00d6" /><br>
 
-*Generated report of File Integrity the report can be seen on reporting section and can be downloaded in **PDF** format. The sample report has been uploaded under the file section of the wazuhlabproject repositories*<br>
+*Generated report of File Integrity the report can be seen under reporting section and can be downloaded in **PDF** format. The sample report has been uploaded under the file section of the wazuhlabproject repositories*<br>
 
 
 *Disclaimer: Only use this in closed environment.* 
