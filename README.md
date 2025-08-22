@@ -102,15 +102,17 @@ Using this command line in *.ossec.conf* file.
 ⦁ Trying failed login attempts.<br>
 ⦁ Uploaded test malware samples.<br>
 <div align="left"><h3>Overview</h3></div>
-<img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" />
+<img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
 
 <div align="left"> <h3>Results</h3></div>
+
 <img width="" height="287" alt="Screenshot 2025-08-17 221458" src="https://github.com/user-attachments/assets/06eaffac-69fe-4af8-ad6c-c90e556e6cb3" /><br>
 
 ⦁ Wazuh successfully collected logs from endpoints.<br>
 ⦁ Real-time alerts and dashboards displayed in the Wazuh interface.<br>
 
 <div align="left"> <h3>File Integrity Monitoring</h3></div>
+
 <img width="" height="323" alt="Screenshot 2025-08-22 021704" src="https://github.com/user-attachments/assets/f1712bb3-d177-4e6f-b860-3a95eadb4d0d" /><br>
 
 *Dashboard of File Integrity Monitoring.*<br>
@@ -129,7 +131,7 @@ Using this command line in *.ossec.conf* file.
 
 <img width="" height="311" alt="Screenshot 2025-08-21 203620" src="https://github.com/user-attachments/assets/d8ab00b3-894d-450e-bbed-bd55574390c4" /><br>
 
-*Made changes in **.txt** file.*<br>
+*Made some text changes in **.txt** file.*<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-21 203652" src="https://github.com/user-attachments/assets/91189be4-e00f-43ba-bb29-84640babac81" /><br>
 
@@ -137,7 +139,7 @@ Using this command line in *.ossec.conf* file.
 
 <img width="" height="323" alt="Screenshot 2025-08-22 021639" src="https://github.com/user-attachments/assets/36bb743b-f8ee-480e-ada8-7b02d39f775e" /><br>
 
-*The file changes are visible in Event section.*<br>
+*The Logs of file changes of desired directories are visible in Event section.*<br>
 
 **Report**<br>
 
