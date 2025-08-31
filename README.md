@@ -185,6 +185,6 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 
 ---
 
-*Generated report can be seen under reporting section and could be delete or downloaded in **PDF** format. The sample report has been uploaded under the file section of the wazuhlabproject repositories*<br>
+*Generated report can be seen under reporting section and could be delete or downloaded in **PDF** format. The sample report has been uploaded under the report folder file section of the wazuhlabproject repositories*<br>
 
 *Disclaimer: Only use this in closed environment.* 
