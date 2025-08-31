@@ -39,7 +39,7 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 ```
 <div align="left"> <h3>Deployment Steps of Wazuh OVA</h3></div>
 
-1. Downloaded the .ova from official Wazuh [downloads](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.
+1. Downloaded the .ova from official Wazuh [Downloads](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.
 2. Imported the .ova into **VMware**.
 3. Allocated at least **4GB RAM**, **2 CPU cores**, and **50GB storage**.
 4. Configured **Bridged Networking** or **NAT with Port Forwarding**.
@@ -58,52 +58,62 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
   <alert_format>json</alert_format>
 </integration>
 ```
-Using this command line in *.ossec.conf* file.<br>
-Get your Virustotal API from [here](https://www.virustotal.com/gui/my-apikey).
+Pasted this .xml line in **.ossec.conf** file.<br>
+```
+https://www.virustotal.com/gui/my-apikey
+```
+*Get your Virustotal API from here.*
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
 1. Booted up the Virtual Machine and log in with default credentials.<br>
 2. Found the Virtual Machine IP using:<br>
+
 ```bash
    ip addr
 ```
-
 <img width="" height="348" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/19cbca14-78a9-45eb-aafd-db46f5b49d12" /><br>
 
 *Preview of Virtual Machine ip addr command.* 
 <div align="left"> <h3>Accessing of Wazuh Dashboard</h3></div>
-⦁ Opened a browser and navigated to:<br></br>
 
- ```bash
+⦁ Opened a browser and navigated to:<br>
+
+```bash
   https://<WAZUH_VM_IP>
-  ```
+```
 *In my case it was **10.233.187.64***<br>
-⦁ Login's with default credentials and change the password.
 
-<img width="" height="327" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" />
+⦁ Login's with default credentials and changed the password.
 
+<img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" />
 
 <div align="left"> <h3>Installation of Wazuh Agents</h3></div>
 
-⦁ From the dashboard: **Agents Deployed new agent**.<br>
+<img width="" height="323" alt="Screenshot 2025-09-01 042019" src="https://github.com/user-attachments/assets/0f29552c-9b41-4509-b250-8639d259944a" /><br>
+
+⦁ From the dashboard: **Deployed new agent**.<br>
 ⦁ Followed the installer instructions for **Windows**<br>
 
  ```bash
- .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.0.0.2"
+ .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.233.187.64"
   ```
+*Pasted this in Windows Powershell.*<br>
+
+---
 <img width="" height="350" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
 
-*Paste this in Windows Powershell.*<br>
-<div align="left"> <h3>Testing Detection</h3></div>
-⦁ Running a port scan:<br></br>
+*GUI of a Wazuh Agent.*
+<div align="left"> <h3>Testing Connection</h3></div>
 
-   ```bash
-  nmap -A <agent-ip>
-  ```
+⦁ Running a ping scan:<br>
 
-⦁ Trying failed login attempts.<br>
-⦁ Uploaded test malware samples.<br>
+```bash
+  ping <agent-ip>
+```
+<img width="" height="329" alt="Screenshot 2025-09-01 045943" src="https://github.com/user-attachments/assets/f131249f-f8f6-4cac-a20e-eda860216f74" /><br>
+
+*Ping return **0% Loss** the Wazuh IP is reachable and responsive.*
 <div align="left"><h3>Overview</h3></div>
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
 
@@ -191,6 +201,6 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 
 ---
 
-*Generated report can be seen under reporting section and could be delete or downloaded in **PDF** format. The sample report has been uploaded under the report folder file section of the wazuhlabproject repositories*<br>
+*Generated report can be seen under reporting section and could be delete or downloaded in **PDF** format. The sample report has been uploaded under the Report folder of file section in the wazuhlabproject repositories*<br>
 
 *Disclaimer: Only use this in closed environment.* 
