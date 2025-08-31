@@ -107,6 +107,10 @@ Get your Virustotal API from [here](https://www.virustotal.com/gui/my-apikey).
 <div align="left"><h3>Overview</h3></div>
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
 
+<img width="" height="322" alt="Screenshot 2025-08-31 061821" src="https://github.com/user-attachments/assets/50f670ce-9a62-415d-bab3-cd70ac653b7e" /><br>
+
+*Configuration Assessment dashboard showing the benchmarks to scan and monitor endpoint for security misconfigurations and ensure compliance with security best practices.*
+
 <div align="left"> <h3>Results</h3></div>
 
 <img width="" height="287" alt="Screenshot 2025-08-17 221458" src="https://github.com/user-attachments/assets/06eaffac-69fe-4af8-ad6c-c90e556e6cb3" /><br>
