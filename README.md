@@ -61,6 +61,7 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 Using this command line in *.ossec.conf* file.<br>
 Get your Virustotal API from [here](https://www.virustotal.com/gui/my-apikey).
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
+<img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
 1. Booted up the Virtual Machine and log in with default credentials.<br>
 2. Found the Virtual Machine IP using:<br></br>
  
@@ -75,8 +76,9 @@ Get your Virustotal API from [here](https://www.virustotal.com/gui/my-apikey).
 ⦁ Opened a browser and navigated to:<br></br>
 
  ```bash
-  https://<WAZUH_VM_IP> #IN MY CASE 10.233.187.64
+  https://<WAZUH_VM_IP>
   ```
+*In my case it was **10.233.187.64***<br>
 ⦁ Login's with default credentials and change the password.
 
 <img width="" height="327" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" />
