@@ -39,7 +39,7 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
 ```
 <div align="left"> <h3>Deployment Steps of Wazuh OVA</h3></div>
 
-1. Downloaded the .ova from official Wazuh downloads section.
+1. Downloaded the .ova from official Wazuh [downloads](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.
 2. Imported the .ova into **VMware**.
 3. Allocated at least **4GB RAM**, **2 CPU cores**, and **50GB storage**.
 4. Configured **Bridged Networking** or **NAT with Port Forwarding**.
@@ -58,7 +58,8 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
   <alert_format>json</alert_format>
 </integration>
 ```
-Using this command line in *.ossec.conf* file.
+Using this command line in *.ossec.conf* file.<br>
+Get your Virustotal API from [here](https://www.virustotal.com/gui/my-apikey).
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
 1. Booted up the Virtual Machine and log in with default credentials.<br>
 2. Found the Virtual Machine IP using:<br></br>
@@ -153,7 +154,7 @@ Using this command line in *.ossec.conf* file.
 
 <img width="" height="323" alt="Screenshot 2025-08-26 065955" src="https://github.com/user-attachments/assets/29c4ced9-a80c-4fbc-a368-a6c816cee07c" /><br>
 
-*Dashboard of Malware Detection. Downloaded the malware from various source for testing.*
+*Dashboard of Malware Detection. Downloaded the malware from various [sources](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.*
 
 ---
 
