@@ -65,7 +65,9 @@ https://www.virustotal.com/gui/my-apikey
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
-1. Booted up the Virtual Machine and log in with default credentials.<br>
+1. Booted up the Virtual Machine.<br>
+
+2. Log in with default credentials.<br>
 ⦁ In my case:<br>
 
 Username:
@@ -78,7 +80,7 @@ Password:
 wazuh
 ```
 ##
-2. Found the Virtual Machine IP using:<br>
+3. Found the Virtual Machine IP using:<br>
 
 ```bash
    ip addr
