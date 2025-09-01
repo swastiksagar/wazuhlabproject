@@ -105,7 +105,7 @@ admin
 ```
 ##
 
-**Password**<br>
+**Password:**<br>
 ```
 admin
 ```
