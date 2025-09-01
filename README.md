@@ -4,8 +4,8 @@
 
 <div align="left"> <h3>Description</h3></div>
 
-This project demonstrates the deployment and testing of a **Security Information and Event Management (SIEM)** system using *Wazuh*.  
-The setup uses a **pre-built Wazuh OVA** file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
+This project demonstrates the deployment and testing of a **Security Information and Event Management** (SIEM) system using *Wazuh*.  
+The setup uses a pre-built **Wazuh OVA** file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
 
 
 <div align="left"> <h3>Objectives</h3></div>
