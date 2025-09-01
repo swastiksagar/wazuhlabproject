@@ -141,7 +141,7 @@ admin
 
 <img width="" height="322" alt="Screenshot 2025-08-31 061821" src="https://github.com/user-attachments/assets/50f670ce-9a62-415d-bab3-cd70ac653b7e" /><br>
 
-*Configuration Assessment dashboard showing the benchmarks to scan and monitor endpoint for security misconfigurations and ensure compliance with security best practices.*
+*The Configuration Assessment dashboard provides the benchmarks to scan and monitor endpoint for security misconfigurations, ensuring compliance with security best practices.*
 
 <div align="left"> <h3>Results</h3></div>
 
