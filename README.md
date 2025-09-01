@@ -67,7 +67,21 @@ https://www.virustotal.com/gui/my-apikey
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
 1. Booted up the Virtual Machine and log in with default credentials.<br>
-2. Found the Virtual Machine IP using:<br>
+In my case:<br>
+```
+wazuh-user
+```
+**Username**<br>
+
+---
+
+```
+wazuh
+```
+**Password**<br>
+
+---
+3. Found the Virtual Machine IP using:<br>
 
 ```bash
    ip addr
@@ -84,8 +98,21 @@ https://www.virustotal.com/gui/my-apikey
 ```
 *In my case it was **10.233.187.64***<br>
 
-⦁ Login's with default credentials and changed the password.
+⦁ Login's with default credentials and changed the password.<br>
 
+```
+admin
+```
+**Username**<br>
+
+---
+
+```
+admin
+```
+**Password**<br>
+
+---
 <img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" />
 
 <div align="left"> <h3>Installation of Wazuh Agents</h3></div>
@@ -139,7 +166,7 @@ https://www.virustotal.com/gui/my-apikey
 <directories check_all="yes" report_changes="yes" realtime="yes">C:\Users\swast\Downloads</directories>
 ```
 
-*Added this lines in ossec.conf to monitor the desired directories.*<br>
+*Added this lines in **ossec.conf** to monitor the desired directories.*<br>
 
 ---
 <img width="" height="323" alt="Screenshot 2025-08-21 203532" src="https://github.com/user-attachments/assets/a1bae4ca-e9d2-48ab-872b-3b31525e722f" /><br>
@@ -188,7 +215,7 @@ https://www.virustotal.com/gui/my-apikey
 
 <img width="" height="323" alt="Screenshot 2025-08-26 070022" src="https://github.com/user-attachments/assets/3d4014e5-1550-4232-9701-6ece478ec0ab" /><br>
 
-*Wazuh provided the virustotal scanned link in the details section of the event. The malware got detected due the integration of virustotal API.*
+*Wazuh provided the virustotal scanned link in the details section of the event. The malware got detected as malicious on 36 engines due the integration of virustotal API.*
 
 ```http
 https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23/detection/f-17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23-1754894123
@@ -201,6 +228,9 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 
 ---
 
-*Generated report can be seen under reporting section and could be delete or downloaded in **PDF** format. The sample report has been uploaded under the Report folder of file section in the wazuhlabproject repositories*<br>
+*Generated the report of every event can be seen under reporting section and could be deleted or downloaded in **PDF** format. The sample report has been uploaded under the Report folder of file section in the wazuhlabproject repositories*<br>
 
 *Disclaimer: Only use this in closed environment.* 
+
+##
+**Successfully completed the wazuhlabproject on 1/SEPT/2025 on 07:00 AM.**
