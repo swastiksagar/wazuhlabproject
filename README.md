@@ -73,14 +73,14 @@ wazuh-user
 ```
 **Username**<br>
 
----
+##
 
 ```
 wazuh
 ```
 **Password**<br>
 
----
+##
 3. Found the Virtual Machine IP using:<br>
 
 ```bash
@@ -105,14 +105,14 @@ admin
 ```
 **Username**<br>
 
----
+##
 
 ```
 admin
 ```
 **Password**<br>
 
----
+##
 <img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" />
 
 <div align="left"> <h3>Installation of Wazuh Agents</h3></div>
@@ -233,4 +233,4 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 *Disclaimer: Only use this in closed environment.* 
 
 ##
-**Successfully completed the wazuhlabproject on 1/SEPT/2025 on 07:00 AM.**
+**The wazuhlabproject will be regularly updated. The last update on 1/SEPT/2025 at 07:00 AM.**
