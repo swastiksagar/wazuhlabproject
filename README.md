@@ -122,7 +122,7 @@ admin
   ```
 *Pasted this in Windows Powershell.*<br>
 
----
+##
 <img width="" height="350" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
 
 *GUI of a Wazuh Agent.*
@@ -140,8 +140,8 @@ admin
 
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
 
-Dashboard of Wazuh
-
+Dashboard of Wazuh.
+##
 <img width="" height="322" alt="Screenshot 2025-08-31 061821" src="https://github.com/user-attachments/assets/50f670ce-9a62-415d-bab3-cd70ac653b7e" /><br>
 
 The Configuration Assessment dashboard provides the benchmarks to scan and monitor endpoint for security misconfigurations, ensuring compliance with security best practices.
@@ -159,34 +159,34 @@ The Configuration Assessment dashboard provides the benchmarks to scan and monit
 
 Dashboard of File Integrity Monitoring.<br>
 
----
+##
 ```bash
 <directories check_all="yes" report_changes="yes" realtime="yes">C:\Users\swast\Downloads</directories>
 ```
 
 Added this lines in **ossec.conf** to monitor the desired directories.<br>
 
----
+##
 <img width="" height="323" alt="Screenshot 2025-08-21 203532" src="https://github.com/user-attachments/assets/a1bae4ca-e9d2-48ab-872b-3b31525e722f" /><br>
 
 Created a Notepad file for realtime monitoring.<br>
 
----
+##
 <img width="" height="323" alt="Screenshot 2025-08-21 203551" src="https://github.com/user-attachments/assets/45044c8a-a35d-406e-9c37-9a9ffe2df23b" /><br>
 
 The entry of **.txt** is visible in wazuh alert.<br>
 
----
+##
 <img width="" height="311" alt="Screenshot 2025-08-21 203620" src="https://github.com/user-attachments/assets/d8ab00b3-894d-450e-bbed-bd55574390c4" /><br>
 
 Made some text changes in **.txt** file.<br>
 
----
+##
 <img width="" height="323" alt="Screenshot 2025-08-21 203652" src="https://github.com/user-attachments/assets/91189be4-e00f-43ba-bb29-84640babac81" /><br>
 
 Wazuh showed the file has been modified and it's content under **syscheck.diff** in event section.<br>
 
----
+##
 <img width="" height="323" alt="Screenshot 2025-08-22 021639" src="https://github.com/user-attachments/assets/36bb743b-f8ee-480e-ada8-7b02d39f775e" /><br>
 
 The Logs of file changes of desired directories are visible in Event section.<br>
@@ -198,28 +198,28 @@ The Logs of file changes of desired directories are visible in Event section.<br
 Dashboard of Malware Detection.<br>
 ⦁ Downloaded the malware from this [**source**](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.
 
----
+##
 
 <img width="" height="323" alt="Screenshot 2025-08-26 065856" src="https://github.com/user-attachments/assets/83d76169-04cb-497f-83f7-dc09f10ef28b" /><br>
 
 Downloaded **Madman.exe**.
 
----
+##
 
 <img width="" height="323" alt="Screenshot 2025-08-26 070007" src="https://github.com/user-attachments/assets/83d58116-34fb-40ee-b6fd-9180273901d8" /><br>
 
 Wazuh was successfully detected and alerted that **Madman.exe** as a Virus.
 
----
+##
 
 <img width="" height="323" alt="Screenshot 2025-08-26 070022" src="https://github.com/user-attachments/assets/3d4014e5-1550-4232-9701-6ece478ec0ab" /><br>
 
-Wazuh provided the virustotal scanned link in the details section of the event. The malware got detected as malicious on 36 engines due the integration of Virustotal.
+Wazuh provided the virustotal scanned link in the details section of the event. The malware got detected as malicious on 36 engines in virustotal website.
 
 ```http
 https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23/detection/f-17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23-1754894123
 ```
----
+##
 **Report**<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
