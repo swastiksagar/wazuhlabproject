@@ -139,6 +139,8 @@ admin
 <div align="left"><h3>Overview</h3></div>
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
 
+*Dashboard of Wazuh*
+
 <img width="" height="322" alt="Screenshot 2025-08-31 061821" src="https://github.com/user-attachments/assets/50f670ce-9a62-415d-bab3-cd70ac653b7e" /><br>
 
 *The Configuration Assessment dashboard provides the benchmarks to scan and monitor endpoint for security misconfigurations, ensuring compliance with security best practices.*
