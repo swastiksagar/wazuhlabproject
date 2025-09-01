@@ -58,7 +58,7 @@ The setup uses a **pre-built Wazuh OVA file** running inside a virtual machine, 
   <alert_format>json</alert_format>
 </integration>
 ```
-Pasted this .xml line in **.ossec.conf** file.<br>
+Pasted this **.xml** line in ***ossec.conf*** file.<br>
 ```
 https://www.virustotal.com/gui/my-apikey
 ```
