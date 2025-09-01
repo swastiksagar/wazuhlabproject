@@ -192,7 +192,7 @@ The Logs of file changes of desired directories are visible in Event section.<br
 
 <img width="" height="323" alt="Screenshot 2025-08-26 065955" src="https://github.com/user-attachments/assets/29c4ced9-a80c-4fbc-a368-a6c816cee07c" /><br>
 
-Dashboard of Malware Detection. Downloaded the malware from this [**source**](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.
+Dashboard of Malware Detection. ⦁ Downloaded the malware from this [**source**](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.
 
 ---
 
