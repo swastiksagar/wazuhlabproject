@@ -68,18 +68,17 @@ https://www.virustotal.com/gui/my-apikey
 <img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
 1. Booted up the Virtual Machine and log in with default credentials.<br>
 In my case:<br>
+
+**Username:**<br>
 ```
 wazuh-user
 ```
-**Username**<br>
-
 ##
 
+**Password:**<br>
 ```
 wazuh
 ```
-**Password**<br>
-
 ##
 3. Found the Virtual Machine IP using:<br>
 
@@ -100,18 +99,16 @@ wazuh
 
 ⦁ Login's with default credentials and changed the password.<br>
 
+**Username:**<br>
 ```
 admin
 ```
-**Username**<br>
-
 ##
 
+**Password**<br>
 ```
 admin
 ```
-**Password**<br>
-
 ##
 <img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" />
 
