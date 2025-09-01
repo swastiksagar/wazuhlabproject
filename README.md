@@ -166,7 +166,7 @@ Added this lines in **ossec.conf** to monitor the desired directories.<br>
 ---
 <img width="" height="323" alt="Screenshot 2025-08-21 203532" src="https://github.com/user-attachments/assets/a1bae4ca-e9d2-48ab-872b-3b31525e722f" /><br>
 
-Created a Notepad File for realtime monitoring.<br>
+Created a Notepad file for realtime monitoring.<br>
 
 ---
 <img width="" height="323" alt="Screenshot 2025-08-21 203551" src="https://github.com/user-attachments/assets/45044c8a-a35d-406e-9c37-9a9ffe2df23b" /><br>
