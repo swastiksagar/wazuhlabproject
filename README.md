@@ -67,15 +67,16 @@ https://www.virustotal.com/gui/my-apikey
 <img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
 1. Booted up the Virtual Machine.<br>
 
-2. Log in with default credentials.<br>
-⦁ In my case:<br>
+<img width="" height="323" alt="Screenshot 2025-08-31 061411" src="https://github.com/user-attachments/assets/a6e89191-958b-4416-a7e9-28614a817105" /><br>
 
-Username:
+2. Log in with default credentials.<br>
+*⦁ In my case:*<br>
+
+`Username:`
 ```
 wazuh-user
 ```
-##
-Password:
+`Password:`
 ```
 wazuh
 ```
@@ -99,17 +100,16 @@ wazuh
 
 ⦁ Login's with default credentials and changed the password.<br>
 
-Username:
+<img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" /><br>
+
+`Username:`
 ```
 admin
 ```
-##
-Password:
+`Password:`
 ```
 admin
 ```
-##
-<img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" />
 
 <div align="left"> <h3>Installation of Wazuh Agents</h3></div>
 
