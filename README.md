@@ -71,7 +71,7 @@ https://www.virustotal.com/gui/my-apikey
 <img width="" height="323" alt="Screenshot 2025-08-31 061411" src="https://github.com/user-attachments/assets/a6e89191-958b-4416-a7e9-28614a817105" /><br>
 
 2. Log in with default credentials.<br>
-*⦁ In my case:*<br>
+⦁ **In my case:**<br>
 
 `Username:`
 ```
