@@ -126,7 +126,7 @@ admin
 ##
 <img width="" height="350" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
 
-*GUI of a Wazuh Agent.*
+*`GUI` of a Wazuh Agent.*
 <div align="left"> <h3>Testing Connection</h3></div>
 
 ⦁ Running a ping scan:<br>
@@ -209,13 +209,13 @@ Downloaded **Madman.exe**.
 
 <img width="" height="323" alt="Screenshot 2025-08-26 070007" src="https://github.com/user-attachments/assets/83d58116-34fb-40ee-b6fd-9180273901d8" /><br>
 
-Wazuh was successfully detected and alerted that **Madman.exe** as a Virus.
+Wazuh was successfully detected and alerted that **Madman.exe** as a virus.
 
 ##
 
 <img width="" height="323" alt="Screenshot 2025-08-26 070022" src="https://github.com/user-attachments/assets/3d4014e5-1550-4232-9701-6ece478ec0ab" /><br>
 
-Wazuh provided the virustotal scanned link in the details section of the event. The malware got detected as malicious on 36 engines in virustotal website.
+Wazuh provided the virustotal scanned link in the details section of the event. The malware got detected as malicious on `36` engines in virustotal website.
 
 ```http
 https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23/detection/f-17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23-1754894123
