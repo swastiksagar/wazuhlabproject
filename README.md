@@ -8,9 +8,10 @@ This project demonstrates the deployment and testing of a **Security Information
 
 
 <div align="left"> <h3>Objectives</h3></div>
-⦁ Deployed Wazuh SIEM using an OVA file in a virtual environment.<br>
+
+⦁ Deployed Wazuh *SIEM* using an *OVA* file in a virtual environment.<br>
 ⦁ Configured network settings for agent–manager communication.<br>
-⦁ Installed Wazuh agents on monitored endpoints (Windows).<br>
+⦁ Installed Wazuh agents on monitored endpoints `Windows`.<br>
 ⦁ Generated and detected simulated security events.<br>
 ⦁ Analyzed and visualized security logs in the Wazuh Dashboard.<br>
 
@@ -38,8 +39,8 @@ This project demonstrates the deployment and testing of a **Security Information
 ```
 <div align="left"> <h3>Deployment Steps of Wazuh OVA</h3></div>
 
-1. Downloaded the .ova from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.
-2. Imported the .ova into **VMware**.
+1. Downloaded the `.ova` from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.
+2. Imported the `.ova` into **VMware**.
 3. Allocated at least **4GB RAM**, **2 CPU cores**, and **50GB storage**.
 4. Configured **Bridged Networking** or **NAT with Port Forwarding**.
 
