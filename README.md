@@ -41,7 +41,7 @@ This project demonstrates the deployment and testing of a **Security Information
 
 1. Downloaded the `.ova` from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.
 2. Imported the `.ova` into **VMware**.
-3. Allocated at least **4GB RAM**, **2 CPU cores**, and **50GB storage**.
+3. Allocated at least **8GB RAM**, **2 CPU cores**, and **50GB storage**.
 4. Configured **Bridged Networking** or **NAT with Port Forwarding**.
 
 <div align="left"><h3> Integration</h3></div>
