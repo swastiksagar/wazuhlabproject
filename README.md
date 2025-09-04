@@ -6,6 +6,10 @@
 
 This project demonstrates the deployment and testing of a **Security Information and Event Management** `SIEM` system using *Wazuh*. The setup uses a pre-built **Wazuh OVA** file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
 
+#
+
+> [!NOTE]
+> **Disclaimer:** Only use this in closed environment.
 
 <div align="left"> <h3>Objectives</h3></div>
 
@@ -148,9 +152,6 @@ Dashboard of Wazuh.
 
 The Configuration Assessment dashboard provides the benchmarks to scan and monitor endpoint for security misconfigurations, ensuring compliance with security best practices.
 
-> [!NOTE]
-> **Disclaimer:** Only use this in closed environment.
-
 <div align="left"> <h3>Results</h3></div>
 
 <img width="" height="287" alt="Screenshot 2025-08-17 221458" src="https://github.com/user-attachments/assets/06eaffac-69fe-4af8-ad6c-c90e556e6cb3" /><br>
@@ -233,6 +234,3 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 ---
 
 Generated the report of every event can be seen under reporting section and could be deleted or downloaded in **PDF** format. The sample report has been uploaded under the Report folder of file section in the wazuhlabproject repositories<br>
-
-##
-**The wazuhlabproject will be regularly updated. The last update on 1/SEPT/2025 at 07:00 AM.**
