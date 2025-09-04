@@ -75,7 +75,7 @@ https://www.virustotal.com/gui/my-apikey
 <img width="" height="323" alt="Screenshot 2025-08-31 061411" src="https://github.com/user-attachments/assets/a6e89191-958b-4416-a7e9-28614a817105" /><br>
 
 2. Log in with default credentials.<br>
-⦁ **In my case:**<br>
+⦁ *In my case:*<br>
 
 `Username:`
 ```
@@ -196,6 +196,12 @@ Wazuh showed the file has been modified and it's content under **syscheck.diff**
 <img width="" height="323" alt="Screenshot 2025-08-22 021639" src="https://github.com/user-attachments/assets/36bb743b-f8ee-480e-ada8-7b02d39f775e" /><br>
 
 The Logs of file changes of desired directories are visible in Event section.<br>
+
+---
+> [!WARNING]
+> The following content includes a known malware source. Proceed with extreme caution.
+> Accessing or interacting with the linked material may compromise your system's security.
+> This information is provided strictly for educational or analytical purposes. Do **not** download, execute, or distribute the file unless you fully understand the risks.
 
 <div align="left"><h3>Malware Detection</h3> 
 
