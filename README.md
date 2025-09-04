@@ -240,7 +240,7 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 ##
 <div align="left"> <h3>Reporting</h3></div>
 
-Generated the report of every event can be seen under reporting section and could be deleted or downloaded in **PDF** format. The sample report has been uploaded under the [***Report***](https://github.com/swastiksagar/wazuhlabproject/tree/main/Report) folder of file section in the wazuhlabproject repositories<br>
+After generating the report of desired event can be seen under reporting section and could be deleted or downloaded in **PDF** format. The sample report has been uploaded under the [***Report***](https://github.com/swastiksagar/wazuhlabproject/tree/main/Report) folder of file section in the wazuhlabproject repositories<br>
 ##
 <img width="" height="323" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
 <img width="" height="323" alt="Screenshot 2025-08-21 203845" src="https://github.com/user-attachments/assets/270ccfe8-059a-4a6a-9a4e-061c56ff00d6" /><br>
