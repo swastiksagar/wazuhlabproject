@@ -75,7 +75,6 @@ https://www.virustotal.com/gui/my-apikey
 <img width="" height="323" alt="Screenshot 2025-08-31 061411" src="https://github.com/user-attachments/assets/a6e89191-958b-4416-a7e9-28614a817105" /><br>
 
 2. Log in with default credentials.<br>
-⦁ *In my case:*<br>
 
 `Username:`
 ```
@@ -101,7 +100,10 @@ wazuh
 ```bash
   https://<WAZUH_VM_IP>
 ```
-*In my case it was **10.233.187.64***<br>
+For me it was: **10.233.187.64**<br>
+
+> [!TIP]
+> Please use **HTTPS** when accessing the Wazuh dashboard to ensure encrypted communication and protect sensitive data.
 
 ⦁ Login's with default credentials and changed the password.<br>
 
@@ -131,7 +133,7 @@ admin
 ##
 <img width="" height="350" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
 
-*`GUI` of a Wazuh Agent.*
+`GUI` of a Wazuh Agent.
 <div align="left"> <h3>Testing Connection</h3></div>
 
 ⦁ Running a ping scan:<br>
@@ -141,7 +143,7 @@ admin
 ```
 <img width="" height="329" alt="Screenshot 2025-09-01 045943" src="https://github.com/user-attachments/assets/f131249f-f8f6-4cac-a20e-eda860216f74" /><br>
 
-*Ping return **0% Loss** the Wazuh IP is reachable and responsive.*
+Ping return `0%` Loss the Wazuh IP is reachable and responsive.
 <div align="left"><h3>Overview</h3></div>
 
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
@@ -160,6 +162,8 @@ The Configuration Assessment dashboard provides the benchmarks to scan and monit
 ⦁ Real-time alerts and dashboards displayed in the Wazuh interface.<br>
 
 <div align="left"> <h3>File Integrity Monitoring</h3></div>
+
+File Integrity Monitoring `FIM` in Wazuh is a powerful feature designed to detect unauthorized changes to files and directories - crucial for maintaining system integrity and spotting potential security breaches.<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-22 021704" src="https://github.com/user-attachments/assets/f1712bb3-d177-4e6f-b860-3a95eadb4d0d" /><br>
 
@@ -205,6 +209,8 @@ The Logs of file changes of desired directories are visible in Event section.<br
 
 <div align="left"><h3>Malware Detection</h3> 
 
+You can configure Wazuh to send file hashes or suspicious files to **VirusTotal** for scanning against multiple antivirus engines.
+#
 <img width="" height="323" alt="Screenshot 2025-08-26 065955" src="https://github.com/user-attachments/assets/29c4ced9-a80c-4fbc-a368-a6c816cee07c" /><br>
 
 Dashboard of Malware Detection.<br>
@@ -232,11 +238,9 @@ Wazuh provided the virustotal scanned link in the details section of the event. 
 https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23/detection/f-17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23-1754894123
 ```
 ##
-**Report**<br>
+<div align="left"> <h3>Reporting</h3></div>
 
+Generated the report of every event can be seen under reporting section and could be deleted or downloaded in **PDF** format. The sample report has been uploaded under the [***Report***](https://github.com/swastiksagar/wazuhlabproject/tree/main/Report) folder of file section in the wazuhlabproject repositories<br>
+##
 <img width="" height="323" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
 <img width="" height="323" alt="Screenshot 2025-08-21 203845" src="https://github.com/user-attachments/assets/270ccfe8-059a-4a6a-9a4e-061c56ff00d6" /><br>
-
----
-
-Generated the report of every event can be seen under reporting section and could be deleted or downloaded in **PDF** format. The sample report has been uploaded under the Report folder of file section in the wazuhlabproject repositories<br>
