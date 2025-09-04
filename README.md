@@ -8,7 +8,7 @@ This project demonstrates the deployment and testing of a **Security Information
 
 #
 
-> [!NOTE]
+> [!IMPORTANT]
 > **Disclaimer:** Only use this in closed environment.
 
 <div align="left"> <h3>Objectives</h3></div>
@@ -204,7 +204,7 @@ The Logs of file changes of desired directories are visible in Event section.<br
 <div align="left"><h3>Malware Detection</h3></div>
 
 You can configure Wazuh to send file hashes or suspicious files to **VirusTotal** for scanning against multiple antivirus engines.
-> [!WARNING]
+> [!CAUTION]
 > The following content includes a known malware source. Proceed with extreme caution.
 > Accessing or interacting with the linked material may compromise your system's security.
 > This information is provided strictly for educational or analytical purposes. Do **not** download, execute, or distribute the file unless you fully understand the risks.
