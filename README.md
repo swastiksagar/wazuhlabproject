@@ -87,7 +87,6 @@ Found the Virtual Machine IP using:<br>
 ```
 <img width="" height="348" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/19cbca14-78a9-45eb-aafd-db46f5b49d12" /><br>
 
-Preview of Virtual Machine `ip addr` command output.
 <div align="left"> <h3>Accessing of Wazuh Dashboard</h3></div>
 
 ⦁ Opened a *browser* and navigated to:<br>
