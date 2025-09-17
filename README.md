@@ -58,13 +58,16 @@ Get your *Virustotal API* from here.
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
 
-⦁ Booted up the Virtual Machine.<br>
+<img width="" height="346.3" alt="image" src="https://github.com/user-attachments/assets/c2af8018-f806-4f2f-9bde-86429f411f1e" /><br>
+
+
+Booting up the Virtual Machine.<br>
 
 #
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061411" src="https://github.com/user-attachments/assets/a6e89191-958b-4416-a7e9-28614a817105" /><br>
 
-⦁ Log in with Default Credentials.<br>
+Log in with Default Credentials.<br>
 
 `Username:`
 ```
@@ -77,7 +80,7 @@ wazuh
 
 #
 
-⦁ Found the Virtual Machine IP using:<br>
+Found the Virtual Machine IP using:<br>
 
 ```bash
    ip addr
@@ -92,6 +95,8 @@ Preview of Virtual Machine `ip addr` command output.
 ```bash
   https://<WAZUH_VM_IP>
 ```
+Then the browser *Google Chrome, Edge* displayed the <ins>unsafe, back to safety</ins> page.<br>
+*Clicked on Advanced -> Proceed to website(unsafe).*<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" /><br>
 
@@ -109,6 +114,8 @@ admin
 <div align="left"> <h3>Installation of Wazuh Agents</h3></div>
 
 <img width="" height="323" alt="Screenshot 2025-09-01 042019" src="https://github.com/user-attachments/assets/0f29552c-9b41-4509-b250-8639d259944a" /><br>
+
+<img width="" height="346.3" alt="image" src="https://github.com/user-attachments/assets/c5579b9a-bdfa-4444-aac1-d865a4b22047" /><br>
 
 From the dashboard: **Deployed new agent**.<br>
 Followed the installer instructions for **Windows**<br>
@@ -222,7 +229,7 @@ Dashboard of Malware Detection.<br>
   <alert_format>json</alert_format>
 </integration>
 ```
-Pasted this **.xml** line in **ossec.conf** file.<br>
+Added this **.xml** line in **ossec.conf** on Wazuh Manager.<br>
 
 #
 
