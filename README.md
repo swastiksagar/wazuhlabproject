@@ -58,7 +58,7 @@ Get your *Virustotal API* from here.
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
 
-<img width="" height="346.3" alt="image" src="https://github.com/user-attachments/assets/c2af8018-f806-4f2f-9bde-86429f411f1e" /><br>
+<img width="" height="327" alt="Screenshot 2025-09-17 084733" src="https://github.com/user-attachments/assets/d9ec29bd-4428-4240-83ca-813b1f2a4c2b" /><br>
 
 
 Booting up the Virtual Machine.<br>
@@ -115,14 +115,18 @@ admin
 
 <img width="" height="323" alt="Screenshot 2025-09-01 042019" src="https://github.com/user-attachments/assets/0f29552c-9b41-4509-b250-8639d259944a" /><br>
 
-<img width="" height="346.3" alt="image" src="https://github.com/user-attachments/assets/c5579b9a-bdfa-4444-aac1-d865a4b22047" /><br>
+<img width="" height="323" alt="Screenshot 2025-09-17 085142" src="https://github.com/user-attachments/assets/f5c75b73-d061-4251-b181-a4c55c8b65b5" /><br>
 
 From the dashboard: **Deployed new agent**.<br>
 Followed the installer instructions for **Windows**<br>
 
- ```bash
- .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.233.187.64"
-  ```
+```powershell
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.12.0-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='10.22.137.106' WAZUH_AGENT_NAME='MSI'
+```
+
+```bash
+ .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.22.137.106"
+```
 Pasted this in Windows Powershell.<br>
 
 #
