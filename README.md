@@ -6,8 +6,6 @@
 
 This project demonstrates the deployment and testing of a **Security Information and Event Management** `SIEM` system using *Wazuh*. The setup uses a pre-built **Wazuh OVA** file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
 
-#
-
 > [!IMPORTANT]
 > **Disclaimer:** Only use this in closed environment.
 
@@ -50,27 +48,22 @@ This project demonstrates the deployment and testing of a **Security Information
 
 <div align="left"><h3> Integration</h3></div>
 
-**Virustotal**
+<ins>***Virustotal***</ins>
 
-⦁ Integrated the Virustotal API for Malware Scanning.</br>
+⦁ Integrated the *Virustotal API* for Malware Detection.</br>
 
-```bash
-<integration>
-  <name>virustotal</name>
-  <api_key>API_KEY</api_key> <!-- Your Virustotal API Key -->
-  <group>syscheck</group>
-  <alert_format>json</alert_format>
-</integration>
-```
-Pasted this **.xml** line in **ossec.conf** file.<br>
 ```
 https://www.virustotal.com/gui/my-apikey
 ```
 *Get your Virustotal API from here.*
+
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
+
 1. Booted up the Virtual Machine.<br>
+
+#
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061411" src="https://github.com/user-attachments/assets/a6e89191-958b-4416-a7e9-28614a817105" /><br>
 
@@ -169,7 +162,10 @@ File Integrity Monitoring `FIM` in Wazuh is a powerful feature designed to detec
 
 Dashboard of File Integrity Monitoring.<br>
 
-##
+#
+
+<img width="" height="323" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/189ffc36-7dc3-4276-9325-087e422e0a62" /><br>
+
 ```bash
 <directories check_all="yes" report_changes="yes" realtime="yes">C:\Users\swast\Downloads</directories>
 ```
@@ -203,7 +199,7 @@ The Logs of file changes of desired directories are visible in Event section.<br
 
 <div align="left"><h3>Malware Detection</h3></div>
 
-You can configure Wazuh to send file hashes or suspicious files to **VirusTotal** for scanning against multiple antivirus engines.
+Configured Wazuh to send file hashes or suspicious files to **VirusTotal** for scanning against multiple antivirus engines.
 > [!CAUTION]
 > The following content includes a known malware source. Proceed with extreme caution.
 > Accessing or interacting with the linked material may compromise your system's security.
@@ -212,14 +208,26 @@ You can configure Wazuh to send file hashes or suspicious files to **VirusTotal*
 <img width="" height="323" alt="Screenshot 2025-08-26 065955" src="https://github.com/user-attachments/assets/29c4ced9-a80c-4fbc-a368-a6c816cee07c" /><br>
 
 Dashboard of Malware Detection.<br>
-*Downloaded the malware from this [**source**](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.*
 
 ##
 
+<img width="" height="323" alt="Screenshot 2025-09-17 063558" src="https://github.com/user-attachments/assets/f298e935-ae6b-4bc0-847e-82938d3ddfb8" /><br>
+
+```xml
+<integration>
+  <name>virustotal</name>
+  <api_key>API_KEY</api_key> <!-- Your Virustotal API Key -->
+  <group>syscheck</group>
+  <alert_format>json</alert_format>
+</integration>
+```
+Pasted this **.xml** line in **ossec.conf** file.<br>
+
+#
 <img width="" height="323" alt="Screenshot 2025-08-26 065856" src="https://github.com/user-attachments/assets/83d76169-04cb-497f-83f7-dc09f10ef28b" /><br>
 
-Downloaded **Madman.exe**.
-
+Downloaded **Madman.exe**<br>
+Downloaded the malware from this [***source***](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.
 ##
 
 <img width="" height="323" alt="Screenshot 2025-08-26 070007" src="https://github.com/user-attachments/assets/83d58116-34fb-40ee-b6fd-9180273901d8" /><br>
