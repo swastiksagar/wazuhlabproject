@@ -87,6 +87,17 @@ Found the Virtual Machine IP using:<br>
 ```
 <img width="" height="348" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/19cbca14-78a9-45eb-aafd-db46f5b49d12" /><br>
 
+<div align="left"> <h3>Testing Connection</h3></div>
+
+⦁ Running a ping scan:<br>
+
+```bash
+  ping <agent-ip>
+```
+<img width="" height="329" alt="Screenshot 2025-09-01 045943" src="https://github.com/user-attachments/assets/f131249f-f8f6-4cac-a20e-eda860216f74" /><br>
+
+Ping return `0%` Loss the Wazuh IP is reachable and responsive.
+
 <div align="left"> <h3>Accessing of Wazuh Dashboard</h3></div>
 
 ⦁ Opened a *browser* and navigated to:<br>
@@ -120,7 +131,7 @@ From the dashboard: **Deployed new agent**.<br>
 Followed the installer instructions for **Windows**<br>
 
 ```powershell
-Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.12.0-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='10.22.137.106' WAZUH_AGENT_NAME='MSI'
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.12.0-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='10.22.137.106' WAZUH_AGENT_NAME='Windows-Swastik'
 ```
 
 ```bash
@@ -132,17 +143,8 @@ Pasted this in Windows Powershell.<br>
 
 <img width="" height="350" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
 
-`GUI` of a Wazuh Agent.
-<div align="left"> <h3>Testing Connection</h3></div>
+***GUI*** of a Wazuh Agent.
 
-⦁ Running a ping scan:<br>
-
-```bash
-  ping <agent-ip>
-```
-<img width="" height="329" alt="Screenshot 2025-09-01 045943" src="https://github.com/user-attachments/assets/f131249f-f8f6-4cac-a20e-eda860216f74" /><br>
-
-Ping return `0%` Loss the Wazuh IP is reachable and responsive.
 <div align="left"><h3>Overview</h3></div>
 
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
@@ -232,7 +234,7 @@ Dashboard of Malware Detection.<br>
   <alert_format>json</alert_format>
 </integration>
 ```
-Added this **.xml** line in **ossec.conf** on Wazuh Manager.<br>
+Added this *.xml* line in **ossec.conf** on Wazuh Manager.<br>
 
 #
 
