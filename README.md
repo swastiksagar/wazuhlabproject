@@ -10,7 +10,7 @@ This project demonstrates the deployment and testing of a **Security Information
 
 ⦁ Deployed Wazuh `SIEM` using an `OVA` file in a virtual environment.<br>
 ⦁ Configured network settings for agent–manager communication.<br>
-⦁ Installed Wazuh agents on monitored endpoints in `Windows.`<br>
+⦁ Installed Wazuh agents on monitored endpoints.<br>
 ⦁ Generated and detected simulated security events.<br>
 ⦁ Analyzed and visualized security logs in the Wazuh Dashboard.<br>
 
