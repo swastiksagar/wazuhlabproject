@@ -137,7 +137,7 @@ Ping return `0%` Loss the Wazuh IP is reachable and responsive.
 
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
 
-Dashboard of Wazuh.
+Overview Dashboard of Wazuh.
 
 #
 
