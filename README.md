@@ -205,8 +205,6 @@ The Logs of file changes of desired directories are visible in Event section.<br
 Configured Wazuh to send file hashes or suspicious files to **VirusTotal** for scanning against multiple antivirus engines.
 > [!CAUTION]
 > The following content includes a known malware source. Proceed with extreme caution.
-> Accessing or interacting with the linked material may compromise your system's security.
-> This information is provided strictly for educational or analytical purposes. Do **not** download, execute, or distribute the file unless you fully understand the risks.
 
 <img width="" height="323" alt="Screenshot 2025-08-26 065955" src="https://github.com/user-attachments/assets/29c4ced9-a80c-4fbc-a368-a6c816cee07c" /><br>
 
