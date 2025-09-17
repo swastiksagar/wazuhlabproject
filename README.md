@@ -4,16 +4,13 @@
 
 <div align="left"> <h3>Description</h3></div>
 
-This project demonstrates the deployment and testing of a **Security Information and Event Management** `SIEM` system using *Wazuh*. The setup uses a pre-built **Wazuh OVA** file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
-
-> [!IMPORTANT]
-> **Disclaimer:** Only use this in closed environment.
+This project demonstrates the deployment and testing of a **Security Information and Event Management** `SIEM` system using Wazuh. The setup uses a pre-built **Wazuh OVA** file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
 
 <div align="left"> <h3>Objectives</h3></div>
 
-⦁ Deployed Wazuh *SIEM* using an *OVA* file in a virtual environment.<br>
+⦁ Deployed Wazuh `SIEM` using an `OVA` file in a virtual environment.<br>
 ⦁ Configured network settings for agent–manager communication.<br>
-⦁ Installed Wazuh agents on monitored endpoints `Windows`.<br>
+⦁ Installed Wazuh agents on monitored endpoints in `Windows.`<br>
 ⦁ Generated and detected simulated security events.<br>
 ⦁ Analyzed and visualized security logs in the Wazuh Dashboard.<br>
 
@@ -21,7 +18,7 @@ This project demonstrates the deployment and testing of a **Security Information
 
 | Tool / Technology        | Purpose |
 |--------------------------|---------|
-| **Wazuh OVA**            | Pre-configured SIEM with Wazuh Manager, OpenSearch, and Dashboard |
+| **Wazuh OVA**            | Pre-configured SIEM with Wazuh Manager, and Dashboard |
 | **VMware Workstation**   | Virtualization platform for Wazuh VM |
 | **Windows 11**           | Endpoint systems for Wazuh agents |
 | **Wazuh Agent**          | Installed on endpoints to send logs/events |
@@ -34,17 +31,17 @@ This project demonstrates the deployment and testing of a **Security Information
 |  Endpoint (Agent)  |  --->  |                   |       |                   |
 |  Windows / Linux   |        |                   |       |                   |
 +--------------------+        |                   |       |                   |
-|   Wazuh Manager    |  <-->  |    OpenSearch /   |       |     Dashboard     |
-+--------------------+        |     (OVA VM)      |       |                   |
+|   Wazuh Manager    |  <-->  |     (OVA VM)      |       |     Dashboard     |
++--------------------+        |                   |       |                   |
 |  Endpoint (Agent)  |  --->  |                   |       |                   |
 +--------------------+        +-------------------+       +-------------------+
 ```
 <div align="left"> <h3>Deployment Steps of Wazuh OVA</h3></div>
 
-1. Downloaded the `.ova` from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.
-2. Imported the `.ova` into **VMware**.
-3. Allocated at least **8GB RAM**, **2 CPU cores**, and **50GB storage**.
-4. Configured **Bridged Networking** or **NAT with Port Forwarding**.
+⦁ Downloaded the `.ova` from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.<br>
+⦁ Imported the `.ova` into **VMware**.<br>
+⦁ Allocated at least **8GB RAM**, **2 CPU cores**, and **50GB storage**.<br>
+⦁ Configured **Bridged Networking** or **NAT with Port Forwarding**.<br>
 
 <div align="left"><h3> Integration</h3></div>
 
@@ -55,19 +52,19 @@ This project demonstrates the deployment and testing of a **Security Information
 ```
 https://www.virustotal.com/gui/my-apikey
 ```
-*Get your Virustotal API from here.*
+Get your *Virustotal API* from here.
 
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061146" src="https://github.com/user-attachments/assets/d52f9878-1446-4af3-8fa5-446e779f4b7e" /><br>
 
-1. Booted up the Virtual Machine.<br>
+⦁ Booted up the Virtual Machine.<br>
 
 #
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061411" src="https://github.com/user-attachments/assets/a6e89191-958b-4416-a7e9-28614a817105" /><br>
 
-2. Log in with default credentials.<br>
+⦁ Log in with Default Credentials.<br>
 
 `Username:`
 ```
@@ -77,30 +74,28 @@ wazuh-user
 ```
 wazuh
 ```
-##
-3. Found the Virtual Machine IP using:<br>
+
+#
+
+⦁ Found the Virtual Machine IP using:<br>
 
 ```bash
    ip addr
 ```
 <img width="" height="348" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/19cbca14-78a9-45eb-aafd-db46f5b49d12" /><br>
 
-*Preview of Virtual Machine `ip addr` command.* 
+Preview of Virtual Machine `ip addr` command output.
 <div align="left"> <h3>Accessing of Wazuh Dashboard</h3></div>
 
-⦁ Opened a browser and navigated to:<br>
+⦁ Opened a *browser* and navigated to:<br>
 
 ```bash
   https://<WAZUH_VM_IP>
 ```
-For me it was: **10.233.187.64**<br>
-
-> [!TIP]
-> Please use **HTTPS** when accessing the Wazuh dashboard to ensure encrypted communication and protect sensitive data.
-
-⦁ Login's with default credentials and changed the password.<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" /><br>
+
+⦁ Login's with default credentials and changed the password.<br>
 
 `Username:`
 ```
@@ -115,15 +110,16 @@ admin
 
 <img width="" height="323" alt="Screenshot 2025-09-01 042019" src="https://github.com/user-attachments/assets/0f29552c-9b41-4509-b250-8639d259944a" /><br>
 
-⦁ From the dashboard: **Deployed new agent**.<br>
-⦁ Followed the installer instructions for **Windows**<br>
+From the dashboard: **Deployed new agent**.<br>
+Followed the installer instructions for **Windows**<br>
 
  ```bash
  .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.233.187.64"
   ```
-*Pasted this in Windows Powershell.*<br>
+Pasted this in Windows Powershell.<br>
 
-##
+#
+
 <img width="" height="350" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
 
 `GUI` of a Wazuh Agent.
@@ -142,7 +138,9 @@ Ping return `0%` Loss the Wazuh IP is reachable and responsive.
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
 
 Dashboard of Wazuh.
-##
+
+#
+
 <img width="" height="322" alt="Screenshot 2025-08-31 061821" src="https://github.com/user-attachments/assets/50f670ce-9a62-415d-bab3-cd70ac653b7e" /><br>
 
 The Configuration Assessment dashboard provides the benchmarks to scan and monitor endpoint for security misconfigurations, ensuring compliance with security best practices.
@@ -172,27 +170,32 @@ Dashboard of File Integrity Monitoring.<br>
 
 Added this lines in **ossec.conf** to monitor the desired directories.<br>
 
-##
+#
+
 <img width="" height="323" alt="Screenshot 2025-08-21 203532" src="https://github.com/user-attachments/assets/a1bae4ca-e9d2-48ab-872b-3b31525e722f" /><br>
 
 Created a Notepad file for realtime monitoring.<br>
 
-##
+#
+
 <img width="" height="323" alt="Screenshot 2025-08-21 203551" src="https://github.com/user-attachments/assets/45044c8a-a35d-406e-9c37-9a9ffe2df23b" /><br>
 
 The entry of **.txt** is visible in wazuh alert.<br>
 
-##
+#
+
 <img width="" height="311" alt="Screenshot 2025-08-21 203620" src="https://github.com/user-attachments/assets/d8ab00b3-894d-450e-bbed-bd55574390c4" /><br>
 
 Made some text changes in **.txt** file.<br>
 
-##
+#
+
 <img width="" height="323" alt="Screenshot 2025-08-21 203652" src="https://github.com/user-attachments/assets/91189be4-e00f-43ba-bb29-84640babac81" /><br>
 
 Wazuh showed the file has been modified and it's content under **syscheck.diff** in event section.<br>
 
-##
+#
+
 <img width="" height="323" alt="Screenshot 2025-08-22 021639" src="https://github.com/user-attachments/assets/36bb743b-f8ee-480e-ada8-7b02d39f775e" /><br>
 
 The Logs of file changes of desired directories are visible in Event section.<br>
@@ -209,7 +212,7 @@ Configured Wazuh to send file hashes or suspicious files to **VirusTotal** for s
 
 Dashboard of Malware Detection.<br>
 
-##
+#
 
 <img width="" height="323" alt="Screenshot 2025-09-17 063558" src="https://github.com/user-attachments/assets/f298e935-ae6b-4bc0-847e-82938d3ddfb8" /><br>
 
@@ -224,17 +227,19 @@ Dashboard of Malware Detection.<br>
 Pasted this **.xml** line in **ossec.conf** file.<br>
 
 #
+
 <img width="" height="323" alt="Screenshot 2025-08-26 065856" src="https://github.com/user-attachments/assets/83d76169-04cb-497f-83f7-dc09f10ef28b" /><br>
 
 Downloaded **Madman.exe**<br>
 Downloaded the malware from this [***source***](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.
-##
+
+#
 
 <img width="" height="323" alt="Screenshot 2025-08-26 070007" src="https://github.com/user-attachments/assets/83d58116-34fb-40ee-b6fd-9180273901d8" /><br>
 
 Wazuh was successfully detected and alerted that **Madman.exe** as a virus.
 
-##
+#
 
 <img width="" height="323" alt="Screenshot 2025-08-26 070022" src="https://github.com/user-attachments/assets/3d4014e5-1550-4232-9701-6ece478ec0ab" /><br>
 
@@ -243,10 +248,12 @@ Wazuh provided the virustotal scanned link in the details section of the event. 
 ```http
 https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23/detection/f-17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23-1754894123
 ```
-##
+
+#
+
 <div align="left"> <h3>Reporting</h3></div>
 
-After generating the report of desired event can be seen under reporting section and could be deleted or downloaded in **PDF** format. 
+We can generate the report of desired event can be seen under reporting section and could be deleted or downloaded in **PDF** format. 
 
 > [!NOTE]
 > The sample report has been uploaded under the [***Report***](https://github.com/swastiksagar/wazuhlabproject/tree/main/Report) folder of file section in the wazuhlabproject repositories<br>
