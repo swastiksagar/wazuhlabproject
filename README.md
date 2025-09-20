@@ -260,6 +260,12 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 ```
 
 #
+<div align="left"> <h3>IT Hygiene</h3></div>
+
+In this video, I walk you through essential IT hygiene practices using Wazuh, a powerful open-source security platform. Whether you're managing endpoints, monitoring logs, or enforcing compliance, good hygiene is the backbone of a secure infrastructure - and Wazuh makes it actionable.
+[***Youtube***](https://youtu.be/InprtVmPQxo?si=UHiuESRIPSMgR0uo)
+
+#
 
 <div align="left"> <h3>Reporting</h3></div>
 
