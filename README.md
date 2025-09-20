@@ -174,7 +174,7 @@ Dashboard of File Integrity Monitoring.<br>
 
 #
 
-<img width="" height="323" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/189ffc36-7dc3-4276-9325-087e422e0a62" /><br>
+<img width="" height="347" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/189ffc36-7dc3-4276-9325-087e422e0a62" /><br>
 
 ```bash
 <directories check_all="yes" report_changes="yes" realtime="yes">C:\Users\swast\Downloads</directories>
