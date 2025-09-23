@@ -269,17 +269,17 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 
 <img width="" height="323" alt="Screenshot 2025-09-22 023437" src="https://github.com/user-attachments/assets/9cd30c78-5245-4473-9022-5f208f3d838f" /><br>
 
-This Wazuh IT Hygiene dashboard provides a snapshot of system health, highlighting OS details, installed packages, running processes, and hardware specs for endpoint visibility.<br>
+Wazuh IT Hygiene dashboard visualizes endpoint OS, packages, processes, and hardware details for real-time system health insights.<br>
 
 #
 
 <img width="" height="323" alt="Screenshot 2025-09-22 023634" src="https://github.com/user-attachments/assets/8bf53c85-1f98-4038-b530-4599a2d0042c" /><br>
 
-This Wazuh dashboard summarizes endpoint platform, OS, and architecture data—confirming consistent Windows 11 Home systems with x86_64 architecture across the monitored host.<br>
+Wazuh system section summarizes host OS, platform, and architecture details to support endpoint hygiene and configuration tracking.<br>
 
 <img width="" height="323" alt="Screenshot 2025-09-22 023646" src="https://github.com/user-attachments/assets/1e228494-a7e7-428d-ab8f-1e4e704dd383" /><br>
 
-This Wazuh IT Hygiene dashboard highlights endpoint hardware specs—showing CPU model, core count, and memory usage for the MSI host running an AMD Ryzen 7 4700U.<br>
+This Wazuh IT Hygiene dashboard highlights endpoint hardware specs - showing CPU model, core count, and memory usage for the MSI host running an AMD Ryzen 7 4700U.<br>
 
 #
 
@@ -291,17 +291,21 @@ This Wazuh Software dashboard catalogs 69 installed packages by vendor and type,
 
 <img width="" height="323" alt="Screenshot 2025-09-22 023718" src="https://github.com/user-attachments/assets/1cde4fbe-46a7-4e75-acd0-a2e046320b51" /><br>
 
-This Wazuh dashboard tracks Windows KB updates, visualizing the most and least common patches across endpoints to support effective vulnerability and compliance management.<br>
+Wazuh tracks Windows KB updates, visualizing the most and least common patches across endpoints to support effective vulnerability and compliance management.<br>
 
 #
 
 <img width="" height="323" alt="Screenshot 2025-09-22 023729" src="https://github.com/user-attachments/assets/958f4fbd-2d91-46e9-bf17-55717728df16" /><br>
 
+Wazuh process section visualizes top processes and start times to support anomaly detection and endpoint hygiene.<br>
+
 <img width="" height="323" alt="Screenshot 2025-09-22 023745" src="https://github.com/user-attachments/assets/a1ae90ee-bc67-45d5-8a6c-9a577a6ce1cb" /><br>
+
+Lists active processes per agent with PID, parent PID, and command-line details for forensic and performance analysis.<br>
 
 <img width="" height="323" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/d7178c28-676b-43f4-9a9f-a245e3c812e5" /><br>
 
-This Wazuh Processes dashboard surfaces the top running executables and their start times, helping track system activity and detect anomalies like persistent or suspicious processes.<br>
+This Wazuh Processes dashboard surfaces the top running executables and their start times, helping track system activity and detect anomalies like persistent or suspicious processes. Windows Task Manager and Wazuh process logs correlate svchost.exe activity, aiding validation and threat investigation.<br>
 
 #
 
@@ -315,23 +319,51 @@ This Wazuh Networks dashboard maps active interfaces and IP configurations, reve
 
 <img width="" height="323" alt="Screenshot 2025-09-22 024040" src="https://github.com/user-attachments/assets/f547ec7f-1897-408c-9469-92d0c353731e" /><br>
 
+Wazuh interface section details interface states, types, MTU values, and MAC addresses to support network diagnostics and hygiene tracking.<br>
+
 <img width="" height="323" alt="Screenshot 2025-09-22 024021" src="https://github.com/user-attachments/assets/e0ed995a-a135-4416-8953-dccf9f7858be" /><br>
+
+Wazuh system section visualizes DHCP metrics and interface configurations to assess protocol hygiene and network accessibility.<br>
 
 <img width="" height="323" alt="Screenshot 2025-09-22 024031" src="https://github.com/user-attachments/assets/e7bcd074-763a-42ad-9d88-33217864981b" /><br>
 
+Lists DHCP status, interface names, types, and metrics per agent to support network configuration audits and hygiene tracking.<br>
+
 <img width="" height="323" alt="Screenshot 2025-09-22 024050" src="https://github.com/user-attachments/assets/cab07ce9-434c-48cb-99c3-dd0602eef9c5" /><br>
+
+Wazuh system section visualizes source ports, transport protocols, and process activity to uncover traffic patterns and potential threats.<br>
 
 <img width="" height="323" alt="Screenshot 2025-09-22 024100" src="https://github.com/user-attachments/assets/d9b55aa3-006f-4075-a794-c6e46f8f71a7" /><br>
 
-<img width="" height="323" alt="Screenshot 2025-09-22 023033" src="https://github.com/user-attachments/assets/6cba24d2-6c40-497a-813c-91a2f4cfa3aa" /><br>
-
-<img width="" height="323" alt="Screenshot 2025-09-22 023047" src="https://github.com/user-attachments/assets/c17effec-09d6-4f14-b5f5-fb3e64420433" /><br>
-
-<img width="" height="323" alt="Screenshot 2025-09-22 023057" src="https://github.com/user-attachments/assets/2b5bb8c7-61a9-4474-a8ae-3718a6532338" /><br>
+Lists agent-level network connections with source IPs, ports, protocols, and initiating processes for hygiene audits and anomaly detection.<br>
 
 <img width="" height="323" alt="Screenshot 2025-09-22 024109" src="https://github.com/user-attachments/assets/4265f77f-433a-4170-87bd-b723d8159545" /><br>
 
+"Wazuh system section visualizes destination ports, transport protocols, and process-level traffic to uncover usage patterns and potential risks.<br>
+
 <img width="" height="323" alt="Screenshot 2025-09-22 024120" src="https://github.com/user-attachments/assets/a7878f56-ba33-496a-ad39-58888eeebe3b" /><br>
+
+Lists destination IPs, ports, transport types, and initiating processes per agent to support traffic audits and hygiene validation.<br>
+
+<img width="" height="323" alt="Screenshot 2025-09-22 023033" src="https://github.com/user-attachments/assets/6cba24d2-6c40-497a-813c-91a2f4cfa3aa" /><br>
+
+The traffic section is not enabled by default, we have to configure it manually by doing some changes in Wazuh Manager. We have to change the following line to.<br>
+
+```xml
+<ports all="no">yes</ports>
+```
+
+<img width="" height="323" alt="Screenshot 2025-09-22 023047" src="https://github.com/user-attachments/assets/c17effec-09d6-4f14-b5f5-fb3e64420433" /><br>
+
+```xml
+<ports all="yes">yes</ports>
+```
+
+After changing the *no* to *yes* in Wazuh Manager.<br>
+
+<img width="" height="323" alt="Screenshot 2025-09-22 023057" src="https://github.com/user-attachments/assets/2b5bb8c7-61a9-4474-a8ae-3718a6532338" /><br>
+
+Then After, restarting the Wazuh Mananger the traffic section will be visible.
 
 ---
 
