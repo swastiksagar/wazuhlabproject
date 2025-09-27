@@ -146,7 +146,7 @@ Pasted this in Windows Powershell.<br>
 
 #
 
-<img width="" height="350" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
+<img width="" height="345" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
 
 ***GUI*** of a Wazuh Agent.
 
