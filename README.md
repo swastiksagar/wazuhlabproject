@@ -40,19 +40,19 @@ This project demonstrates the deployment and testing of a **Security Information
 
 <img width="" height="323" alt="Screenshot 2025-10-06 045223" src="https://github.com/user-attachments/assets/9d3da6bd-591f-40d3-bab1-051973ee0428" /><br>
 
-Downloaded the **`.ova`** from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.<br>
+• Downloaded the **`.ova`** from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.<br>
 
 #
 
 <img width="" height="323" alt="Screenshot 2025-10-06 042218" src="https://github.com/user-attachments/assets/67172d31-0947-4b42-9670-93ff859d3344" /><br>
 
-Imported the **`.ova`** into **VMware**.<br>
+• Imported the **`.ova`** into **VMware**.<br>
 
 #
 
 <img width="" height="214" alt="Screenshot 2025-10-06 045814" src="https://github.com/user-attachments/assets/9968f31a-2865-4186-8d2b-d2884361328e" /><br>
 
-Allocated at least *8GB RAM*, *2 CPU cores*, and *50GB storage*. Configured *Bridged Networking* or *NAT with Port Forwarding*.<br>
+• Allocated at least *8GB RAM*, *4 CPU cores*, and *50GB storage* and configured *Bridged Networking* or *NAT with Port Forwarding*.<br>
 
 
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
@@ -62,13 +62,13 @@ Allocated at least *8GB RAM*, *2 CPU cores*, and *50GB storage*. Configured *Bri
 <img width="" height="327" alt="Screenshot 2025-09-17 084733" src="https://github.com/user-attachments/assets/d9ec29bd-4428-4240-83ca-813b1f2a4c2b" /><br>
 
 
-Booting up the Virtual Machine.<br>
+• Booting up the Virtual Machine.<br>
 
 #
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061411" src="https://github.com/user-attachments/assets/a6e89191-958b-4416-a7e9-28614a817105" /><br>
 
-Log in with Default Credentials.<br>
+• Login's with Default Credentials.<br>
 
 `Username:`
 ```
@@ -81,7 +81,7 @@ wazuh
 
 #
 
-Found the Virtual Machine IP using:<br>
+• Found the Virtual Machine IP using:<br>
 
 ```bash
    ip addr
@@ -133,8 +133,8 @@ admin
 
 <img width="" height="323" alt="Screenshot 2025-09-17 085142" src="https://github.com/user-attachments/assets/f5c75b73-d061-4251-b181-a4c55c8b65b5" /><br>
 
-From the dashboard: **Deployed new agent**.<br>
-Followed the installer instructions for **Windows**<br>
+• From the dashboard: **Deployed new agent**.<br>
+• Followed the installer instructions for **Windows**<br>
 
 ```powershell
 Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.12.0-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='10.22.137.106' WAZUH_AGENT_NAME='Windows-Swastik'
@@ -143,7 +143,7 @@ Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.12.0
 ```bash
  .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.22.137.106"
 ```
-Pasted this in Windows Powershell.<br>
+Pasted this in **Windows Powershell.**<br>
 
 #
 
