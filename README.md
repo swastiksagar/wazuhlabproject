@@ -43,16 +43,6 @@ This project demonstrates the deployment and testing of a **Security Information
 ⦁ Allocated at least **8GB RAM**, **2 CPU cores**, and **50GB storage**.<br>
 ⦁ Configured **Bridged Networking** or **NAT with Port Forwarding**.<br>
 
-<div align="left"><h3> Integration</h3></div>
-
-<ins>***Virustotal***</ins>
-
-⦁ Integrated the *Virustotal API* for Malware Detection.</br>
-
-```
-https://www.virustotal.com/gui/my-apikey
-```
-Get your *Virustotal API* from here.
 
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
 
@@ -240,6 +230,15 @@ Dashboard of Malware Detection.<br>
 </integration>
 ```
 Added this *.xml* line in **ossec.conf** on Wazuh Manager.<br>
+
+<ins>***Virustotal***</ins>
+
+⦁ Integrated the *Virustotal API* for Malware Detection.</br>
+
+```
+https://www.virustotal.com/gui/my-apikey
+```
+Get your *Virustotal API* from here.
 
 #
 
