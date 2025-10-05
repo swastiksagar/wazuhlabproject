@@ -111,7 +111,7 @@ Ping return `0%` Loss the Wazuh IP is reachable and responsive.
 
 <img width="" height="323" alt="Screenshot 2025-09-20 225310" src="https://github.com/user-attachments/assets/8eda7604-54ee-43d7-8898-3a4bc8984895" /><br>
 
-Then the browser *Google Chrome, Edge* displayed the `Your connection isn't private` page.<br>
+Then the browser *Google Chrome, Edge* displayed the **Your connection isn't private** page.<br>
 *Clicked on Advanced -> Continue to website(unsafe).*<br>
 
 <img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" /><br>
