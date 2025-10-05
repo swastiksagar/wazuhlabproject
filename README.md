@@ -156,8 +156,7 @@ The Configuration Assessment dashboard provides the benchmarks to scan and monit
 
 <img width="" height="287" alt="Screenshot 2025-08-17 221458" src="https://github.com/user-attachments/assets/06eaffac-69fe-4af8-ad6c-c90e556e6cb3" /><br>
 
-⦁ Wazuh successfully collected logs from endpoints.<br>
-⦁ Real-time alerts and dashboards displayed in the Wazuh interface.<br>
+Wazuh successfully collected logs from endpoints. Real-time alerts and dashboards displayed in the Wazuh interface.<br>
 
 <div align="left"> <h3>File Integrity Monitoring</h3></div>
 
@@ -175,7 +174,7 @@ Dashboard of File Integrity Monitoring.<br>
 <directories check_all="yes" report_changes="yes" realtime="yes">C:\Users\swast\Downloads</directories>
 ```
 
-Added this lines in **ossec.conf** to monitor the desired directories.<br>
+Added this lines in Wazuh agent **ossec.conf** to monitor the desired directories.<br>
 
 #
 
