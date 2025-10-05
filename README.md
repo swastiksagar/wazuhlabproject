@@ -38,10 +38,18 @@ This project demonstrates the deployment and testing of a **Security Information
 ```
 <div align="left"> <h3>Deployment Steps of Wazuh OVA</h3></div>
 
-⦁ Downloaded the `.ova` from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.<br>
-⦁ Imported the `.ova` into **VMware**.<br>
-⦁ Allocated at least **8GB RAM**, **2 CPU cores**, and **50GB storage**.<br>
-⦁ Configured **Bridged Networking** or **NAT with Port Forwarding**.<br>
+<img width="" height="323" alt="Screenshot 2025-10-06 045223" src="https://github.com/user-attachments/assets/9d3da6bd-591f-40d3-bab1-051973ee0428" /><br>
+
+⦁ Downloaded the **`.ova`** from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.<br>
+
+<img width="" height="323" alt="Screenshot 2025-10-06 042218" src="https://github.com/user-attachments/assets/67172d31-0947-4b42-9670-93ff859d3344" /><br>
+
+⦁ Imported the **`.ova`** into **VMware**.<br>
+
+<img width="" height="200" alt="Screenshot 2025-10-06 045354" src="https://github.com/user-attachments/assets/7e12daa7-f31c-4ffc-ae40-466d0743523f" /><br>
+
+⦁ Allocated at least *8GB RAM*, *2 CPU cores*, and *50GB storage*.<br>
+⦁ Configured *Bridged Networking* or *NAT with Port Forwarding*.<br>
 
 
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
