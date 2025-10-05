@@ -215,7 +215,7 @@ Wazuh showed the file has been modified and it's content under **syscheck.diff**
 
 <img width="" height="323" alt="Screenshot 2025-08-22 021639" src="https://github.com/user-attachments/assets/36bb743b-f8ee-480e-ada8-7b02d39f775e" /><br>
 
-The Logs of file changes of desired directories are visible in Event section.<br>
+The detailed changes of desired directories are visible in Event section.<br>
 
 <div align="left"><h3>Malware Detection</h3></div>
 
