@@ -364,7 +364,10 @@ Identified a session opened for user ossec using `PAM (pam_unix)` through the `S
 
 Sudo Command Execution<br>
 
-Running `sudo systemctl status wazuh-dashboard` to verify what Wazuh events showing.<br>
+```
+sudo systemctl status wazuh-dashboard
+``` 
+Running to verify what Wazuh events showing.<br>
 
 **Purpose:** To ensure the Wazuh dashboard is operational and ready for threat hunting activities.<br>
 
