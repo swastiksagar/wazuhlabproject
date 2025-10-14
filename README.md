@@ -275,6 +275,20 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 
 #
 
+<div align="left"><h3>Threat Hunting</h3></div>
+
+<img width="" height="323" alt="Screenshot 2025-10-10 051925" src="https://github.com/user-attachments/assets/0de08541-9e7c-48eb-94ac-871a1e96579c" /><br>
+<img width="" height="328" alt="Screenshot 2025-10-10 051937" src="https://github.com/user-attachments/assets/96c0da80-e49b-4f41-aeb2-cabc24448161" /><br>
+<img width="" height="328" alt="Screenshot 2025-10-10 051947" src="https://github.com/user-attachments/assets/0d3f68e3-eebc-4507-95d2-78f7ad1b3807" /><br>
+<img width="" height="323" alt="Screenshot 2025-10-10 052004" src="https://github.com/user-attachments/assets/15e43f72-3689-49f9-927a-22660c8fd566" /><br>
+<img width="" height="323" alt="Screenshot 2025-10-10 052027" src="https://github.com/user-attachments/assets/760ad356-2d93-4028-856c-06286e0dd080" /><br>
+<img width="" height="323" alt="Screenshot 2025-10-10 052045" src="https://github.com/user-attachments/assets/889b3af7-5ee3-42ca-9cbd-d43d5916734e" /><br>
+<img width="" height="328" alt="Screenshot 2025-10-10 052258" src="https://github.com/user-attachments/assets/a52bbb4e-3baa-40c5-bfdf-58559a4ad39e" /><br>
+<img width="" height="323" alt="Screenshot 2025-10-10 052318" src="https://github.com/user-attachments/assets/1f9cc2a2-dcf9-4307-b260-865f4f0ec930" /><br>
+<img width="" height="328" alt="Screenshot 2025-10-10 052350" src="https://github.com/user-attachments/assets/b2dede3e-8994-462e-86bd-5d6aa61c7e6c" /><br>
+<img width="" height="323" alt="Screenshot 2025-10-10 052416" src="https://github.com/user-attachments/assets/60e4780d-f90c-46c7-bd99-7447f7273a79" /><br>
+
+
 ---
 
 In this video, I walk you through essential [*IT hygiene*](./ITHYGIENE.md) practices using Wazuh, a powerful open-source security platform. Whether you're managing endpoints, monitoring logs, or enforcing compliance, good hygiene is the backbone of a secure infrastructure - and Wazuh makes it actionable.
