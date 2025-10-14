@@ -278,16 +278,108 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 In **Threat Hunting.** I simulated `SSH` login attempts, privilege escalations, and authentication failures to generate alerts in Wazuh. Then I analyzed threat patterns using *MITRE ATT&CK* mappings, log entries, and dashboard visualizations for proactive threat hunting.<br>
 
 <img width="" height="323" alt="Screenshot 2025-10-10 051925" src="https://github.com/user-attachments/assets/0de08541-9e7c-48eb-94ac-871a1e96579c" /><br>
+
+Dashboard of Threat Hunting.<br>
+
+**Action Performed:** Filtered data for the manager wazuh-server over the last 24 hours.<br>
+Monitored key metrics:<br>
+⦁ Total alerts: 125<br>
+⦁ High severity alerts (Level ≥12): 10<br>
+⦁ Authentication failures: 15<br>
+⦁ Authentication successes: 6<br>
+
+**Analyzed:** Bar chart showing alert level evolution. Donut chart mapping MITRE ATT&CK techniques like Password Guessing, Exploitation, Privilege Escalation.
+
+**Purpose:** To get a high-level view of recent threat activity and identify patterns in alert severity and attack techniques.<br>
+
+#
+
 <img width="" height="328" alt="Screenshot 2025-10-10 051937" src="https://github.com/user-attachments/assets/96c0da80-e49b-4f41-aeb2-cabc24448161" /><br>
+
+Initiated an *SSH* connection from a Windows host to the Wazuh server at `10.170.177.64` using the user `wazuh-user`<br>
+
+#
+
 <img width="" height="328" alt="Screenshot 2025-10-10 051947" src="https://github.com/user-attachments/assets/0d3f68e3-eebc-4507-95d2-78f7ad1b3807" /><br>
+
+Attempted login to `wazuh-user@10.170.177.64`. Encountered a *"Permission denied"* error due to incorrect password.<br>
+
+#
+
 <img width="" height="323" alt="Screenshot 2025-10-10 052004" src="https://github.com/user-attachments/assets/15e43f72-3689-49f9-927a-22660c8fd566" /><br>
+
+Updated Threat Hunting Dashboard.<br>
+
+**Action Performed:** Viewed updated metrics on the Wazuh dashboard `10.170.177.54`<br>
+⦁ Total alerts: 128<br>
+⦁ Authentication failures: 18<br>
+⦁ Authentication successes: 6<br>
+
+Re-analyzed MITRE ATT&CK mapping and alert level trends.<br>
+
+**Purpose:** To validate that new events failed SSH attempts are being captured and reflected in the dashboard.<br>
+
+#
 <img width="" height="323" alt="Screenshot 2025-10-10 052027" src="https://github.com/user-attachments/assets/760ad356-2d93-4028-856c-06286e0dd080" /><br>
+
+**Action Performed:** Investigated threat detection histogram showing spikes.<br>
+Reviewed individual log entries:<br>
+⦁ PAM login failures<br>
+⦁ Password check failures<br>
+⦁ SSH authentication failures<br>
+
+**Purpose:** To correlate alert spikes with specific failed login events and understand the timeline of suspicious activity.
+
+#
 <img width="" height="323" alt="Screenshot 2025-10-10 052045" src="https://github.com/user-attachments/assets/889b3af7-5ee3-42ca-9cbd-d43d5916734e" /><br>
+
+***SSH Log Entry*** – Failed Root Login<br>
+
+**Action Performed:** Inspected a specific log entry from `/var/log/auth.log:` Failed password attempt for `wazuh-user` from <ins>src</ins> IP `10.170.177.43` on port `50610`.
+
+**Purpose:** To identify brute-force or unauthorized access attempts and validate Wazuh’s log parsing and alerting capabilities.
+
+#
 <img width="" height="328" alt="Screenshot 2025-10-10 052258" src="https://github.com/user-attachments/assets/a52bbb4e-3baa-40c5-bfdf-58559a4ad39e" /><br>
+
+Successful Login to Amazon Linux EC2.<br>
+
+**Purpose:** To confirm remote access functionality and establish a baseline for legitimate login behavior.
+
+#
 <img width="" height="323" alt="Screenshot 2025-10-10 052318" src="https://github.com/user-attachments/assets/1f9cc2a2-dcf9-4307-b260-865f4f0ec930" /><br>
+
+PAM Session Opened for User<br>
+
+**Action Performed:** Investigated a log entry from /var/log/secure via the Wazuh dashboard.Identified a session opened for user ossec using PAM (pam_unix) through the SSH daemon (sshd).<br>
+
+⦁ Verified that the session was initiated by UID 0 (root), indicating elevated privileges.<br>
+
+**Purpose:** To monitor legitimate session initiations and validate Wazuh’s ability to detect and log privileged access events, helping distinguish between authorized and suspicious activity.<br>
+
+
+#
 <img width="" height="328" alt="Screenshot 2025-10-10 052350" src="https://github.com/user-attachments/assets/b2dede3e-8994-462e-86bd-5d6aa61c7e6c" /><br>
+
+Sudo Command Execution<br>
+
+**Action Performed:** Ran `sudo systemctl status wazuh-dashboard` to verify service health.
+Confirmed:
+⦁ Dashboard is active and running.<br>
+⦁ Logs show successful startup and operation.<br>
+
+**Purpose:** To ensure the Wazuh dashboard is operational and ready for threat hunting activities.<br>
+
+#
 <img width="" height="323" alt="Screenshot 2025-10-10 052416" src="https://github.com/user-attachments/assets/60e4780d-f90c-46c7-bd99-7447f7273a79" /><br>
 
+**Action Performed:** Analyzed a log entry showing user pttr1 executing sudo from /root/wazuh-dashboard.<br>
+Captured metadata:<br>
+⦁ Command: `/usr/bin/sudo`<br>
+⦁ Executed by: pttr1<br>
+⦁ Target user: `wazuh-user`<br>
+
+**Purpose:** To track privilege escalation attempts and validate Wazuh’s ability to decode and alert on sudo usage.
 
 ---
 
