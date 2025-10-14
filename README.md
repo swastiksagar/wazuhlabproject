@@ -273,9 +273,9 @@ Wazuh provided the virustotal scanned link in the details section of the event. 
 https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23/detection/f-17d81134a5957fb758b9d69a90b033477a991c8b0f107d9864dc790ca37e6a23-1754894123
 ```
 
-#
-
 <div align="left"><h3>Threat Hunting</h3></div>
+
+In **Threat Hunting.** I simulated `SSH` login attempts, privilege escalations, and authentication failures to generate alerts in Wazuh. Then I analyzed threat patterns using *MITRE ATT&CK* mappings, log entries, and dashboard visualizations for proactive threat hunting.<br>
 
 <img width="" height="323" alt="Screenshot 2025-10-10 051925" src="https://github.com/user-attachments/assets/0de08541-9e7c-48eb-94ac-871a1e96579c" /><br>
 <img width="" height="328" alt="Screenshot 2025-10-10 051937" src="https://github.com/user-attachments/assets/96c0da80-e49b-4f41-aeb2-cabc24448161" /><br>
