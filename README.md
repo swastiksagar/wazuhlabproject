@@ -287,11 +287,7 @@ Showing-<br>
 ⦁ Authentication failures: 15<br>
 ⦁ Authentication successes: 6<br>
 
-**Analyzed:** Bar chart showing alert level evolution. Donut chart mapping MITRE ATT&CK techniques like Password Guessing, Exploitation, Privilege Escalation.
-
-**Purpose:** To get a high-level view of recent threat activity and identify patterns in alert severity and attack techniques.<br>
-
-#
+**Analyzed:** The Bar chart showing alert level evolution. Donut chart mapping MITRE ATT&CK techniques like Password Guessing, Exploitation, Privilege Escalation.
 
 <img width="" height="328" alt="Screenshot 2025-10-10 051937" src="https://github.com/user-attachments/assets/96c0da80-e49b-4f41-aeb2-cabc24448161" /><br>
 
@@ -316,8 +312,6 @@ Showing-<br>
 ⦁ Authentication successes: 6<br>
 
 Re-analyzed MITRE ATT&CK mapping and alert level trends.<br>
-
-**Purpose:** To validate that new events failed SSH attempts are being captured and reflected in the dashboard.<br>
 
 #
 <img width="" height="323" alt="Screenshot 2025-10-10 052027" src="https://github.com/user-attachments/assets/760ad356-2d93-4028-856c-06286e0dd080" /><br>
@@ -356,9 +350,6 @@ Identified a session opened for user ossec using `PAM (pam_unix)` through the `S
 
 ⦁ Verified that the session was initiated by UID 0 (root), indicating elevated privileges.<br>
 
-**Purpose:** To monitor legitimate session initiations and validate Wazuh’s ability to detect and log privileged access events, helping distinguish between authorized and suspicious activity.<br>
-
-
 #
 <img width="" height="328" alt="Screenshot 2025-10-10 052350" src="https://github.com/user-attachments/assets/b2dede3e-8994-462e-86bd-5d6aa61c7e6c" /><br>
 
@@ -374,12 +365,7 @@ Running to verify what Wazuh events showing.<br>
 #
 <img width="" height="323" alt="Screenshot 2025-10-10 052416" src="https://github.com/user-attachments/assets/60e4780d-f90c-46c7-bd99-7447f7273a79" /><br>
 
-Wazuh alerted a log entry showing user executing `sudo` from `/root/wazuh-dashboard`.<br>
-
-Captured metadata:<br>
-⦁ Command: `systemctl status wazuh-dashboard` <br>
-⦁ Executed by: `wazuh-server` <br>
-⦁ Target user: `wazuh-user`<br>
+Wazuh alerted a log entry showing user executing `sudo` and commented that **First time user executed sudo command**. Also showing which type of data.command was executed `systemctl status wazuh-dashboard` by using `sudo` command.<br>
 
 **Purpose:** To track privilege escalation attempts and validate Wazuh’s ability to decode and alert on sudo usage.
 
