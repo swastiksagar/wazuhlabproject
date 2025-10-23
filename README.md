@@ -4,15 +4,15 @@
 
 <div align="left"> <h3>Description</h3></div>
 
-This project demonstrates the deployment and testing of a **Security Information and Event Management** `SIEM` system using Wazuh. The setup uses a pre-built **Wazuh OVA** file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
+This project demonstrates the deployment and testing of a **Security Information and Event Management** `SIEM` system using Wazuh. The setup uses a pre-built Wazuh `OVA` file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
 
 <div align="left"> <h3>Objectives</h3></div>
 
-⦁ Deployed Wazuh `SIEM` using an `OVA` file in a virtual environment.<br>
+⦁ Deployed Wazuh **SIEM** using an **OVA** file in a virtual environment.<br>
 ⦁ Configured network settings for agent–manager communication.<br>
-⦁ Installed Wazuh agents on monitored endpoints.<br>
+⦁ Installed **Wazuh agents** on monitored endpoints.<br>
 ⦁ Generated and detected simulated security events.<br>
-⦁ Analyzed and visualized security logs in the Wazuh Dashboard.<br>
+⦁ Analyzed and visualized security logs in the **Wazuh Dashboard**.<br>
 
 <div align="left"> <h3>Tools & Technologies</h3></div>
 
@@ -40,19 +40,19 @@ This project demonstrates the deployment and testing of a **Security Information
 
 <img width="" height="323" alt="Screenshot 2025-10-06 045223" src="https://github.com/user-attachments/assets/9d3da6bd-591f-40d3-bab1-051973ee0428" /><br>
 
-• Downloaded the **`.ova`** from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.<br>
+Downloaded the **.ova** from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.<br>
 
 #
 
 <img width="" height="323" alt="Screenshot 2025-10-06 042218" src="https://github.com/user-attachments/assets/67172d31-0947-4b42-9670-93ff859d3344" /><br>
 
-• Imported the **`.ova`** into **VMware**.<br>
+Imported the **.ova** into **VMware**.<br>
 
 #
 
 <img width="" height="214" alt="Screenshot 2025-10-06 045814" src="https://github.com/user-attachments/assets/9968f31a-2865-4186-8d2b-d2884361328e" /><br>
 
-• Allocated at least *8GB RAM*, *4 CPU cores*, and *50GB storage* and configured *Bridged Networking* or *NAT with Port Forwarding*.<br>
+Allocated at least *8GB RAM*, *4 CPU cores*, and *50GB storage* and configured *Bridged Networking* or *NAT with Port Forwarding*.<br>
 
 
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
@@ -62,7 +62,7 @@ This project demonstrates the deployment and testing of a **Security Information
 <img width="" height="327" alt="Screenshot 2025-09-17 084733" src="https://github.com/user-attachments/assets/d9ec29bd-4428-4240-83ca-813b1f2a4c2b" /><br>
 
 
-• Booting up the Virtual Machine.<br>
+Booting up the Virtual Machine.<br>
 
 #
 
@@ -70,11 +70,11 @@ This project demonstrates the deployment and testing of a **Security Information
 
 • Login's with Default Credentials.<br>
 
-`Username:`
+*Username:*
 ```
 wazuh-user
 ```
-`Password:`
+*Password:*
 ```
 wazuh
 ```
@@ -118,11 +118,11 @@ Then the browser *Google Chrome, Edge* displayed the **Your connection isn't pri
 
 ⦁ Login's with default credentials and changed the password.<br>
 
-`Username:`
+*Username:*
 ```
 admin
 ```
-`Password:`
+*Password:*
 ```
 admin
 ```
@@ -161,7 +161,7 @@ Overview Dashboard of Wazuh.
 
 <img width="" height="322" alt="Screenshot 2025-08-31 061821" src="https://github.com/user-attachments/assets/50f670ce-9a62-415d-bab3-cd70ac653b7e" /><br>
 
-The Configuration Assessment dashboard provides the benchmarks to scan and monitor endpoint for security misconfigurations, ensuring compliance with security best practices.
+The **Configuration Assessment** dashboard provides the benchmarks to scan and monitor endpoint for security misconfigurations, ensuring compliance with security best practices.
 
 <div align="left"> <h3>Results</h3></div>
 
@@ -231,6 +231,16 @@ Dashboard of Malware Detection.<br>
 
 <img width="" height="323" alt="Screenshot 2025-09-17 063558" src="https://github.com/user-attachments/assets/f298e935-ae6b-4bc0-847e-82938d3ddfb8" /><br>
 
+<ins>***Virustotal***</ins>
+
+⦁ Integrated the **Virustotal API** for Malware Detection.</br>
+⦁ You can get **Virustotal API** from here.
+```
+https://www.virustotal.com/gui/my-apikey
+```
+
+Added this *.xml* line in **ossec.conf** on Wazuh Manager.<br>
+
 ```xml
 <integration>
   <name>virustotal</name>
@@ -239,16 +249,6 @@ Dashboard of Malware Detection.<br>
   <alert_format>json</alert_format>
 </integration>
 ```
-Added this *.xml* line in **ossec.conf** on Wazuh Manager.<br>
-
-<ins>***Virustotal***</ins>
-
-⦁ Integrated the *Virustotal API* for Malware Detection.</br>
-
-```
-https://www.virustotal.com/gui/my-apikey
-```
-Get your *Virustotal API* from here.
 
 #
 
@@ -275,13 +275,12 @@ https://www.virustotal.com/gui/file/17d81134a5957fb758b9d69a90b033477a991c8b0f10
 
 <div align="left"><h3>Threat Hunting</h3></div>
 
-In Threat Hunting. I simulated `SSH` login attempts, privilege escalations, and authentication failures to generate alerts in Wazuh. Then I analyzed threat patterns using *MITRE ATT&CK mappings, log entries, and dashboard* visualizations for proactive threat hunting.<br>
+In Threat Hunting. I simulated ***SSH*** login attempts, privilege escalations, and authentication failures to generate alerts in Wazuh. Then I analyzed threat patterns using *MITRE ATT&CK mappings, log entries, and dashboard* visualizations for proactive threat hunting.<br>
 
 <img width="" height="323" alt="Screenshot 2025-10-10 051925" src="https://github.com/user-attachments/assets/0de08541-9e7c-48eb-94ac-871a1e96579c" /><br>
 
 Dashboard of Threat Hunting.<br>
 
-Showing-<br>
 ⦁ Total alerts: 125<br>
 ⦁ High severity alerts (Level ≥12): 10<br>
 ⦁ Authentication failures: 15<br>
@@ -291,13 +290,19 @@ Showing-<br>
 
 <img width="" height="328" alt="Screenshot 2025-10-10 051937" src="https://github.com/user-attachments/assets/96c0da80-e49b-4f41-aeb2-cabc24448161" /><br>
 
-Initiated an *SSH* connection from a Windows host to the Wazuh server at `10.170.177.64` using the user `wazuh-user`<br>
+Initiated a ***SSH*** connection from a Windows host to the Wazuh server at **10.170.177.64** using the username **wazuh-user**<br>
 
 #
 
 <img width="" height="328" alt="Screenshot 2025-10-10 051947" src="https://github.com/user-attachments/assets/0d3f68e3-eebc-4507-95d2-78f7ad1b3807" /><br>
 
-Attempted login to `wazuh-user@10.170.177.64`. Encountered a *"Permission denied"* error due to incorrect password.<br>
+Attempted Login: 
+
+```powershell
+ssh wazuh-user@10.170.177.64
+```
+
+Encountered a ***"Permission denied"*** error due to incorrect password.<br>
 
 #
 
@@ -305,7 +310,6 @@ Attempted login to `wazuh-user@10.170.177.64`. Encountered a *"Permission denied
 
 Updated Threat Hunting Dashboard.<br>
 
-Showing-<br>
 ⦁ Total alerts: 128<br>
 ⦁ High severity alerts (Level ≥12): 10<br>
 ⦁ Authentication failures: 18<br>
@@ -330,42 +334,42 @@ Reviewed individual log entries:<br>
 
 SSH Log Entry – Failed Root Login<br>
 
-Failed password attempt for `wazuh-user` from source IP `10.170.177.43` on port `50610`.
+Failed password attempt for **wazuh-user** from source IP **10.170.177.43** on port **50610**.
 
-**Purpose:** To identify brute-force or unauthorized access attempts and validate Wazuh’s log parsing and alerting capabilities.
+**Purpose:** To identify unauthorized access attempts and validate Wazuh’s log parsing and alerting capabilities.
 
 #
 <img width="" height="328" alt="Screenshot 2025-10-10 052258" src="https://github.com/user-attachments/assets/a52bbb4e-3baa-40c5-bfdf-58559a4ad39e" /><br>
 
-Successful Login to Amazon Linux EC2 Wazuh.<br>
+Initiated successful ***SSH*** Login to Wazuh server.<br>
 
-To confirming remote access functionality and establish a baseline for legitimate login behavior.
+⦁ To confirming remote access functionality and establish a baseline for legitimate login behavior.
 
 #
 <img width="" height="323" alt="Screenshot 2025-10-10 052318" src="https://github.com/user-attachments/assets/1f9cc2a2-dcf9-4307-b260-865f4f0ec930" /><br>
 
 PAM Session Opened for User<br>
 
-Identified a session opened for user ossec using `PAM (pam_unix)` through the `SSH daemon (sshd)`.<br>
+Identified a session opened for user ossec using **PAM** *(pam_unix)* through the **SSH daemon** *(sshd)*.<br>
 
-⦁ Verified that the session was initiated by UID 0 (root), indicating elevated privileges.<br>
+⦁ Verified that the session was initiated by **UID 0** *(root)*, indicating elevated privileges.<br>
 
 #
 <img width="" height="328" alt="Screenshot 2025-10-10 052350" src="https://github.com/user-attachments/assets/b2dede3e-8994-462e-86bd-5d6aa61c7e6c" /><br>
 
 Sudo Command Execution<br>
 
-```
+```powershell
 sudo systemctl status wazuh-dashboard
 ``` 
-Running to verify what Wazuh events showing.<br>
+⦁ This command used for only example purpose to check what Wazuh event showing.<br>
 
 **Purpose:** To ensure the Wazuh dashboard is operational and ready for threat hunting activities.<br>
 
 #
 <img width="" height="323" alt="Screenshot 2025-10-10 052416" src="https://github.com/user-attachments/assets/60e4780d-f90c-46c7-bd99-7447f7273a79" /><br>
 
-Wazuh alerted a log entry showing user executing `sudo` and commented that **First time user executed sudo command**. Also showing which type of data.command was executed `systemctl status wazuh-dashboard` by using `sudo` command.<br>
+Wazuh alerted a log entry showing user executing <ins>*sudo*</ins> and commented that **First time user executed sudo command**. Also showing which type of data.command was executed <ins>**systemctl status wazuh-dashboard**</ins> by using <ins>*sudo*</ins> command.<br>
 
 **Purpose:** To track privilege escalation attempts and validate Wazuh’s ability to decode and alert on sudo usage.
 
