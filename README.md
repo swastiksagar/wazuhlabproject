@@ -1,5 +1,5 @@
 <div align="middle">
-<img height="200" src="https://i.postimg.cc/TPt92ZmJ/Copy-of-s-Block.png" />
+<img height="100" src="https://i.postimg.cc/jSDMhCQR/Wazuh-logo-dark-backgroud.png" />
 </div>
 
 <div align="left"> <h3>Description</h3></div>
