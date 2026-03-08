@@ -24,7 +24,7 @@ This project demonstrates the deployment and testing of a **Security Information
 | **Wazuh Agent**          | Installed on endpoints to send logs/events |
 | **Web Browser**          | For accessing the Wazuh Dashboard |
 
-<div align="left"> <h3>Lab Archietecture</h3></div>
+<div align="left"> <h3>Lab Architecture</h3></div>
 
 ```bash
 +--------------------+        +-------------------+       +-------------------+
