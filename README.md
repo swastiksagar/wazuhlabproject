@@ -1,6 +1,6 @@
-<div align="left">
-<img height="200" src="https://i.postimg.cc/0QCgqrBX/Copilot-20260308-232946.png" />
-</div>
+<div align="center">
+<img width="" height="240" alt="wazuhlabproject-banner-1280x420" src="https://github.com/user-attachments/assets/9ec79f62-6790-4cb9-a531-5fa0e1f10e3c" /></div>
+
 
 <div align="left"> <h3>Description</h3></div>
 
