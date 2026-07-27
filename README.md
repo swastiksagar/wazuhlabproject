@@ -52,7 +52,7 @@
 
 <img width="" height="214" alt="Screenshot 2025-10-06 045814" src="https://github.com/user-attachments/assets/9968f31a-2865-4186-8d2b-d2884361328e" /><br>
 
-*Allocated at least 8GB RAM, 4 CPU cores, and 50GB storage and configured **Bridged Networking** or **NAT with Port Forwarding**.* <br>
+*Allocating at least 8GB RAM, 4 CPU cores, and 50GB storage and configured **Bridged Networking** or **NAT with Port Forwarding**.* <br>
 
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
 
@@ -77,7 +77,7 @@ wazuh-user
 wazuh
 ```
 
-• *Found the Virtual Machine IP using:* <br>
+• *Find the Virtual Machine IP using:* <br>
 
 ```bash
    ip addr
@@ -98,7 +98,7 @@ wazuh
 
 <div align="left"> <h3>Accessing of Wazuh Dashboard</h3></div>
 
-⦁ *Opened a browser and navigated to:* <br>
+⦁ *Opening a browser and navigating to:* <br>
 
 ```bash
   https://<WAZUH_VM_IP>
@@ -142,7 +142,7 @@ Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.12.0
 ```bash
  .\wazuh-agent-4.12.0-1.msi /q WAZUH_MANAGER="10.22.137.106"
 ```
-*Pasted this in **Windows Powershell.*** <br>
+*Pasting this in **Windows Powershell.*** <br>
 
 #
 
@@ -255,7 +255,7 @@ https://www.virustotal.com/gui/my-apikey
 <img width="" height="323" alt="Screenshot 2025-08-26 065856" src="https://github.com/user-attachments/assets/83d76169-04cb-497f-83f7-dc09f10ef28b" /><br>
 
 *Downloaded **Madman.exe*** <br>
-*Downloaded the malware from this [***source***](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.* <br>
+*Downloading the malware from this [***source***](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.* <br>
 
 #
 
