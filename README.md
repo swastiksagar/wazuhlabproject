@@ -4,7 +4,7 @@
 
 <div align="left"> <h3>Description</h3></div>
 
-This project demonstrates the deployment and testing of a **Security Information and Event Management** `SIEM` system using Wazuh. The setup uses a pre-built Wazuh `OVA` file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
+This project demonstrates the deployment and testing of a **Security Information and Event Management** ***SIEM*** system using Wazuh. The setup uses a pre-built Wazuh ***OVA*** file running inside a virtual machine, making it a quick and easy way to learn about Wazuh's monitoring and detection capabilities.</p>
 
 <div align="left"> <h3>Objectives</h3></div>
 
@@ -42,18 +42,13 @@ This project demonstrates the deployment and testing of a **Security Information
 
 Downloaded the **.ova** from official Wazuh [**Downloads**](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html) section.<br>
 
-#
-
 <img width="" height="323" alt="Screenshot 2025-10-06 042218" src="https://github.com/user-attachments/assets/67172d31-0947-4b42-9670-93ff859d3344" /><br>
 
 Imported the **.ova** into **VMware**.<br>
 
-#
-
 <img width="" height="214" alt="Screenshot 2025-10-06 045814" src="https://github.com/user-attachments/assets/9968f31a-2865-4186-8d2b-d2884361328e" /><br>
 
 Allocated at least *8GB RAM*, *4 CPU cores*, and *50GB storage* and configured *Bridged Networking* or *NAT with Port Forwarding*.<br>
-
 
 <div align="left"> <h3>Starting Wazuh in Virtual Machine</h3></div>
 
@@ -61,14 +56,11 @@ Allocated at least *8GB RAM*, *4 CPU cores*, and *50GB storage* and configured *
 
 <img width="" height="327" alt="Screenshot 2025-09-17 084733" src="https://github.com/user-attachments/assets/d9ec29bd-4428-4240-83ca-813b1f2a4c2b" /><br>
 
-
 Booting up the Virtual Machine.<br>
-
-#
 
 <img width="" height="323" alt="Screenshot 2025-08-31 061411" src="https://github.com/user-attachments/assets/a6e89191-958b-4416-a7e9-28614a817105" /><br>
 
-• Login's with Default Credentials.<br>
+• Login's with Default Credentials:<br>
 
 *Username:*
 ```
@@ -78,8 +70,6 @@ wazuh-user
 ```
 wazuh
 ```
-
-#
 
 • Found the Virtual Machine IP using:<br>
 
@@ -95,6 +85,7 @@ wazuh
 ```bash
   ping <agent-ip>
 ```
+
 <img width="" height="329" alt="Screenshot 2025-09-01 045943" src="https://github.com/user-attachments/assets/f131249f-f8f6-4cac-a20e-eda860216f74" /><br>
 
 Ping return `0%` Loss the Wazuh IP is reachable and responsive.
@@ -116,7 +107,7 @@ Then the browser *Google Chrome, Edge* displayed the **Your connection isn't pri
 
 <img width="" height="323" alt="Screenshot 2025-08-22 030624" src="https://github.com/user-attachments/assets/4e566e1c-3407-4b36-b554-7baa67e1d195" /><br>
 
-⦁ Login's with default credentials and changed the password.<br>
+⦁ Login's with default credentials and changed the password:<br>
 
 *Username:*
 ```
@@ -145,8 +136,6 @@ Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.12.0
 ```
 Pasted this in **Windows Powershell.**<br>
 
-#
-
 <img width="" height="345" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/d9edefdd-38fa-4c84-aa26-59f1df4db7e3" /><br>
 
 ***GUI*** of a Wazuh Agent.
@@ -156,8 +145,6 @@ Pasted this in **Windows Powershell.**<br>
 <img width="" height="288" alt="Screenshot 2025-08-17 221511" src="https://github.com/user-attachments/assets/d33b3f56-0b62-4ff2-9aea-493f68ae57ac" /><br>
 
 Overview Dashboard of Wazuh.
-
-#
 
 <img width="" height="322" alt="Screenshot 2025-08-31 061821" src="https://github.com/user-attachments/assets/50f670ce-9a62-415d-bab3-cd70ac653b7e" /><br>
 
@@ -177,8 +164,6 @@ File Integrity Monitoring `FIM` in Wazuh is a powerful feature designed to detec
 
 Dashboard of File Integrity Monitoring.<br>
 
-#
-
 <img width="" height="347" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/189ffc36-7dc3-4276-9325-087e422e0a62" /><br>
 
 ```bash
@@ -187,31 +172,21 @@ Dashboard of File Integrity Monitoring.<br>
 
 Added this lines in Wazuh agent **ossec.conf** to monitor the desired directories.<br>
 
-#
-
 <img width="" height="323" alt="Screenshot 2025-08-21 203532" src="https://github.com/user-attachments/assets/a1bae4ca-e9d2-48ab-872b-3b31525e722f" /><br>
 
 Created a Notepad file for realtime monitoring.<br>
-
-#
 
 <img width="" height="323" alt="Screenshot 2025-08-21 203551" src="https://github.com/user-attachments/assets/45044c8a-a35d-406e-9c37-9a9ffe2df23b" /><br>
 
 The entry of **.txt** is visible in wazuh alert.<br>
 
-#
-
 <img width="" height="311" alt="Screenshot 2025-08-21 203620" src="https://github.com/user-attachments/assets/d8ab00b3-894d-450e-bbed-bd55574390c4" /><br>
 
 Made some text changes in **.txt** file.<br>
 
-#
-
 <img width="" height="323" alt="Screenshot 2025-08-21 203652" src="https://github.com/user-attachments/assets/91189be4-e00f-43ba-bb29-84640babac81" /><br>
 
 Wazuh showed the file has been modified and it's content under **syscheck.diff** in event section.<br>
-
-#
 
 <img width="" height="323" alt="Screenshot 2025-08-22 021639" src="https://github.com/user-attachments/assets/36bb743b-f8ee-480e-ada8-7b02d39f775e" /><br>
 
@@ -226,8 +201,6 @@ Configured Wazuh to send file hashes or suspicious files to **VirusTotal** for s
 <img width="" height="323" alt="Screenshot 2025-08-26 065955" src="https://github.com/user-attachments/assets/29c4ced9-a80c-4fbc-a368-a6c816cee07c" /><br>
 
 Dashboard of Malware Detection.<br>
-
-#
 
 <img width="" height="323" alt="Screenshot 2025-09-17 063558" src="https://github.com/user-attachments/assets/f298e935-ae6b-4bc0-847e-82938d3ddfb8" /><br>
 
@@ -250,20 +223,14 @@ Added this *.xml* line in **ossec.conf** on Wazuh Manager.<br>
 </integration>
 ```
 
-#
-
 <img width="" height="323" alt="Screenshot 2025-08-26 065856" src="https://github.com/user-attachments/assets/83d76169-04cb-497f-83f7-dc09f10ef28b" /><br>
 
 Downloaded **Madman.exe**<br>
 Downloaded the malware from this [***source***](https://github.com/Da2dalus/The-MALWARE-Repo) for testing.
 
-#
-
 <img width="" height="323" alt="Screenshot 2025-08-26 070007" src="https://github.com/user-attachments/assets/83d58116-34fb-40ee-b6fd-9180273901d8" /><br>
 
 Wazuh was successfully detected and alerted that **Madman.exe** as a virus.
-
-#
 
 <img width="" height="323" alt="Screenshot 2025-08-26 070022" src="https://github.com/user-attachments/assets/3d4014e5-1550-4232-9701-6ece478ec0ab" /><br>
 
@@ -279,7 +246,7 @@ In Threat Hunting. I simulated ***SSH*** login attempts, privilege escalations, 
 
 <img width="" height="323" alt="Screenshot 2025-10-10 051925" src="https://github.com/user-attachments/assets/0de08541-9e7c-48eb-94ac-871a1e96579c" /><br>
 
-Dashboard of Threat Hunting.<br>
+Dashboard of Threat Hunting:<br>
 
 ⦁ Total alerts: 125<br>
 ⦁ High severity alerts (Level ≥12): 10<br>
@@ -292,11 +259,9 @@ Dashboard of Threat Hunting.<br>
 
 Initiated a ***SSH*** connection from a Windows host to the Wazuh server at **10.170.177.64** using the username **wazuh-user**<br>
 
-#
-
 <img width="" height="328" alt="Screenshot 2025-10-10 051947" src="https://github.com/user-attachments/assets/0d3f68e3-eebc-4507-95d2-78f7ad1b3807" /><br>
 
-Attempted Login: 
+Attempted Login: <br>
 
 ```powershell
 ssh wazuh-user@10.170.177.64
@@ -304,11 +269,9 @@ ssh wazuh-user@10.170.177.64
 
 Encountered a ***"Permission denied"*** error due to incorrect password.<br>
 
-#
-
 <img width="" height="323" alt="Screenshot 2025-10-10 052004" src="https://github.com/user-attachments/assets/15e43f72-3689-49f9-927a-22660c8fd566" /><br>
 
-Updated Threat Hunting Dashboard.<br>
+Updated Threat Hunting Dashboard:<br>
 
 ⦁ Total alerts: 128<br>
 ⦁ High severity alerts (Level ≥12): 10<br>
@@ -317,7 +280,6 @@ Updated Threat Hunting Dashboard.<br>
 
 Re-analyzed MITRE ATT&CK mapping and alert level trends.<br>
 
-#
 <img width="" height="323" alt="Screenshot 2025-10-10 052027" src="https://github.com/user-attachments/assets/760ad356-2d93-4028-856c-06286e0dd080" /><br>
 
 Investigated threat detection histogram showing spikes.<br>
@@ -329,7 +291,6 @@ Reviewed individual log entries:<br>
 
 **Purpose:** To correlate alert spikes with specific failed login events and understand the timeline of suspicious activity.
 
-#
 <img width="" height="323" alt="Screenshot 2025-10-10 052045" src="https://github.com/user-attachments/assets/889b3af7-5ee3-42ca-9cbd-d43d5916734e" /><br>
 
 SSH Log Entry – Failed Root Login<br>
@@ -338,14 +299,12 @@ Failed password attempt for **wazuh-user** from source IP **10.170.177.43** on p
 
 **Purpose:** To identify unauthorized access attempts and validate Wazuh’s log parsing and alerting capabilities.
 
-#
 <img width="" height="328" alt="Screenshot 2025-10-10 052258" src="https://github.com/user-attachments/assets/a52bbb4e-3baa-40c5-bfdf-58559a4ad39e" /><br>
 
 Initiated successful ***SSH*** Login to Wazuh server.<br>
 
 ⦁ To confirming remote access functionality and establish a baseline for legitimate login behavior.
 
-#
 <img width="" height="323" alt="Screenshot 2025-10-10 052318" src="https://github.com/user-attachments/assets/1f9cc2a2-dcf9-4307-b260-865f4f0ec930" /><br>
 
 PAM Session Opened for User<br>
@@ -354,10 +313,9 @@ Identified a session opened for user ossec using **PAM** *(pam_unix)* through th
 
 ⦁ Verified that the session was initiated by **UID 0** *(root)*, indicating elevated privileges.<br>
 
-#
 <img width="" height="328" alt="Screenshot 2025-10-10 052350" src="https://github.com/user-attachments/assets/b2dede3e-8994-462e-86bd-5d6aa61c7e6c" /><br>
 
-Sudo Command Execution<br>
+Sudo Command Execution:<br>
 
 ```powershell
 sudo systemctl status wazuh-dashboard
@@ -366,7 +324,6 @@ sudo systemctl status wazuh-dashboard
 
 **Purpose:** To ensure the Wazuh dashboard is operational and ready for threat hunting activities.<br>
 
-#
 <img width="" height="323" alt="Screenshot 2025-10-10 052416" src="https://github.com/user-attachments/assets/60e4780d-f90c-46c7-bd99-7447f7273a79" /><br>
 
 Wazuh alerted a log entry showing user executing <ins>*sudo*</ins> and commented that **First time user executed sudo command**. Also showing which type of data.command was executed <ins>**systemctl status wazuh-dashboard**</ins> by using <ins>*sudo*</ins> command.<br>
@@ -378,14 +335,12 @@ Wazuh alerted a log entry showing user executing <ins>*sudo*</ins> and commented
 In this video, I walk you through essential [*IT hygiene*](./ITHYGIENE.md) practices using Wazuh, a powerful open-source security platform. Whether you're managing endpoints, monitoring logs, or enforcing compliance, good hygiene is the backbone of a secure infrastructure - and Wazuh makes it actionable.
 [***Youtube***](https://youtu.be/InprtVmPQxo?si=UHiuESRIPSMgR0uo)
 
-#
-
 <div align="left"> <h3>Reporting</h3></div>
 
 We can generate the report of desired event can be seen under reporting section and could be deleted or downloaded in **PDF** format. 
 
 > [!NOTE]
 > The sample report has been uploaded under the [***Report***](https://github.com/swastiksagar/wazuhlabproject/tree/main/Report) folder of file section in the wazuhlabproject repositories<br>
-##
+
 <img width="" height="323" alt="Screenshot 2025-08-21 203726" src="https://github.com/user-attachments/assets/dc280f49-0f8e-41bb-b6c9-fdbd42bb7645" /><br>
 <img width="" height="323" alt="Screenshot 2025-08-21 203845" src="https://github.com/user-attachments/assets/270ccfe8-059a-4a6a-9a4e-061c56ff00d6" /><br>
