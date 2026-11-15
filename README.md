@@ -1,5 +1,4 @@
-<div align="center">
-<img width="" height="240" alt="wazuhlabproject-banner-1280x420" src="https://github.com/user-attachments/assets/9ec79f62-6790-4cb9-a531-5fa0e1f10e3c" /></div>
+_WAZUH HOMELAB_
 
 
 <div align="left"> <h3>Description</h3></div>
